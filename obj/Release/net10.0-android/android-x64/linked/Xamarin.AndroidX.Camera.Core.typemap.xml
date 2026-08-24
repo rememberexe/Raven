@@ -1,0 +1,255 @@
+<api type="release" assembly-name="Xamarin.AndroidX.Camera.Core" mvid="9014614ec4924559ad4a6d295f638e82">
+  <module assembly-name="Xamarin.AndroidX.Camera.Core" mvid="9014614ec4924559ad4a6d295f638e82" mvid-bytes="TmEUkJLEWUWtSm0pX2OOgg==">
+    <duplicates>
+      <entry java-name="androidx/camera/core/ImageAnalysis$Analyzer" managed-type-name="AndroidX.Camera.Core.ImageAnalysis/IAnalyzerInvoker" token="33554486" />
+      <entry java-name="androidx/camera/core/ImageCapture$OnImageCapturedCallback" managed-type-name="AndroidX.Camera.Core.ImageCapture/OnImageCapturedCallbackInvoker" token="33554492" />
+      <entry java-name="androidx/camera/core/ImageCapture$OnImageSavedCallback" managed-type-name="AndroidX.Camera.Core.ImageCapture/IOnImageSavedCallbackInvoker" token="33554494" />
+      <entry java-name="androidx/camera/core/ImageCapture$ScreenFlash" managed-type-name="AndroidX.Camera.Core.ImageCapture/IScreenFlashInvoker" token="33554498" />
+      <entry java-name="androidx/camera/core/ImageCapture$ScreenFlashListener" managed-type-name="AndroidX.Camera.Core.ImageCapture/IScreenFlashListenerInvoker" token="33554500" />
+      <entry java-name="androidx/camera/core/Preview$SurfaceProvider" managed-type-name="AndroidX.Camera.Core.Preview/ISurfaceProviderInvoker" token="33554505" />
+      <entry java-name="androidx/camera/core/CameraEffect" managed-type-name="AndroidX.Camera.Core.CameraEffectInvoker" token="33554507" />
+      <entry java-name="androidx/camera/core/Camera" managed-type-name="AndroidX.Camera.Core.ICameraInvoker" token="33554516" />
+      <entry java-name="androidx/camera/core/CameraControl" managed-type-name="AndroidX.Camera.Core.ICameraControlInvoker" token="33554518" />
+      <entry java-name="androidx/camera/core/CameraInfo" managed-type-name="AndroidX.Camera.Core.ICameraInfoInvoker" token="33554520" />
+      <entry java-name="androidx/camera/core/ExposureState" managed-type-name="AndroidX.Camera.Core.IExposureStateInvoker" token="33554522" />
+      <entry java-name="androidx/camera/core/ExtendableBuilder" managed-type-name="AndroidX.Camera.Core.IExtendableBuilderInvoker" token="33554524" />
+      <entry java-name="androidx/camera/core/ImageCaptureCapabilities" managed-type-name="AndroidX.Camera.Core.IImageCaptureCapabilitiesInvoker" token="33554526" />
+      <entry java-name="androidx/camera/core/ImageInfo" managed-type-name="AndroidX.Camera.Core.IImageInfoInvoker" token="33554528" />
+      <entry java-name="androidx/camera/core/ImageProcessor$Request" managed-type-name="AndroidX.Camera.Core.IImageProcessorRequestInvoker" token="33554530" />
+      <entry java-name="androidx/camera/core/ImageProcessor$Response" managed-type-name="AndroidX.Camera.Core.IImageProcessorResponseInvoker" token="33554532" />
+      <entry java-name="androidx/camera/core/ImageProcessor" managed-type-name="AndroidX.Camera.Core.IImageProcessorInvoker" token="33554534" />
+      <entry java-name="androidx/camera/core/ImageProxy$PlaneProxy" managed-type-name="AndroidX.Camera.Core.IImageProxyPlaneProxyInvoker" token="33554536" />
+      <entry java-name="androidx/camera/core/ImageProxy" managed-type-name="AndroidX.Camera.Core.IImageProxyInvoker" token="33554538" />
+      <entry java-name="androidx/camera/core/ImageReaderProxyProvider" managed-type-name="AndroidX.Camera.Core.IImageReaderProxyProviderInvoker" token="33554540" />
+      <entry java-name="androidx/camera/core/PreviewCapabilities" managed-type-name="AndroidX.Camera.Core.IPreviewCapabilitiesInvoker" token="33554544" />
+      <entry java-name="androidx/camera/core/RetryPolicy$ExecutionState" managed-type-name="AndroidX.Camera.Core.IRetryPolicyExecutionStateInvoker" token="33554546" />
+      <entry java-name="androidx/camera/core/RetryPolicy" managed-type-name="AndroidX.Camera.Core.IRetryPolicyInvoker" token="33554549" />
+      <entry java-name="androidx/camera/core/SurfaceOutput$CameraInputInfo" managed-type-name="AndroidX.Camera.Core.SurfaceOutputCameraInputInfoInvoker" token="33554551" />
+      <entry java-name="androidx/camera/core/SurfaceOutput" managed-type-name="AndroidX.Camera.Core.ISurfaceOutputInvoker" token="33554553" />
+      <entry java-name="androidx/camera/core/SurfaceProcessor" managed-type-name="AndroidX.Camera.Core.ISurfaceProcessorInvoker" token="33554555" />
+      <entry java-name="androidx/camera/core/MeteringPointFactory" managed-type-name="AndroidX.Camera.Core.MeteringPointFactoryInvoker" token="33554559" />
+      <entry java-name="androidx/camera/core/SurfaceRequest$TransformationInfo" managed-type-name="AndroidX.Camera.Core.SurfaceRequest/TransformationInfoInvoker" token="33554563" />
+      <entry java-name="androidx/camera/core/SurfaceRequest$TransformationInfoListener" managed-type-name="AndroidX.Camera.Core.SurfaceRequest/ITransformationInfoListenerInvoker" token="33554565" />
+      <entry java-name="androidx/camera/core/UseCase$StateChangeCallback" managed-type-name="AndroidX.Camera.Core.UseCase/IStateChangeCallbackInvoker" token="33554568" />
+      <entry java-name="androidx/camera/core/UseCase" managed-type-name="AndroidX.Camera.Core.UseCaseInvoker" token="33554569" />
+      <entry java-name="androidx/camera/core/resolutionselector/ResolutionFilter" managed-type-name="AndroidX.Camera.Core.ResolutionSelector.IResolutionFilterInvoker" token="33554574" />
+      <entry java-name="androidx/camera/core/processing/SurfaceProcessorInternal" managed-type-name="AndroidX.Camera.Core.Processing.ISurfaceProcessorInternalInvoker" token="33554579" />
+      <entry java-name="androidx/camera/core/internal/TargetConfig$Builder" managed-type-name="AndroidX.Camera.Core.Internal.ITargetConfigBuilderInvoker" token="33554582" />
+      <entry java-name="androidx/camera/core/internal/TargetConfig" managed-type-name="AndroidX.Camera.Core.Internal.ITargetConfigInvoker" token="33554584" />
+      <entry java-name="androidx/camera/core/internal/ThreadConfig$Builder" managed-type-name="AndroidX.Camera.Core.Internal.IThreadConfigBuilderInvoker" token="33554586" />
+      <entry java-name="androidx/camera/core/impl/AttachedSurfaceInfo" managed-type-name="AndroidX.Camera.Core.Impl.AttachedSurfaceInfoInvoker" token="33554588" />
+      <entry java-name="androidx/camera/core/impl/CameraCaptureCallback" managed-type-name="AndroidX.Camera.Core.Impl.CameraCaptureCallbackInvoker" token="33554590" />
+      <entry java-name="androidx/camera/core/impl/CameraThreadConfig" managed-type-name="AndroidX.Camera.Core.Impl.CameraThreadConfigInvoker" token="33554602" />
+      <entry java-name="androidx/camera/core/impl/CaptureConfig$OptionUnpacker" managed-type-name="AndroidX.Camera.Core.Impl.CaptureConfig/IOptionUnpackerInvoker" token="33554606" />
+      <entry java-name="androidx/camera/core/impl/DeferrableSurface" managed-type-name="AndroidX.Camera.Core.Impl.DeferrableSurfaceInvoker" token="33554608" />
+      <entry java-name="androidx/camera/core/impl/CameraCaptureResult" managed-type-name="AndroidX.Camera.Core.Impl.ICameraCaptureResultInvoker" token="33554610" />
+      <entry java-name="androidx/camera/core/impl/CameraConfig" managed-type-name="AndroidX.Camera.Core.Impl.ICameraConfigInvoker" token="33554612" />
+      <entry java-name="androidx/camera/core/impl/CameraControlInternal" managed-type-name="AndroidX.Camera.Core.Impl.ICameraControlInternalInvoker" token="33554614" />
+      <entry java-name="androidx/camera/core/impl/CameraDeviceSurfaceManager$Provider" managed-type-name="AndroidX.Camera.Core.Impl.ICameraDeviceSurfaceManagerProviderInvoker" token="33554616" />
+      <entry java-name="androidx/camera/core/impl/CameraDeviceSurfaceManager" managed-type-name="AndroidX.Camera.Core.Impl.ICameraDeviceSurfaceManagerInvoker" token="33554618" />
+      <entry java-name="androidx/camera/core/impl/CameraFactory$Provider" managed-type-name="AndroidX.Camera.Core.Impl.ICameraFactoryProviderInvoker" token="33554620" />
+      <entry java-name="androidx/camera/core/impl/CameraFactory" managed-type-name="AndroidX.Camera.Core.Impl.ICameraFactoryInvoker" token="33554622" />
+      <entry java-name="androidx/camera/core/impl/CameraInfoInternal" managed-type-name="AndroidX.Camera.Core.Impl.ICameraInfoInternalInvoker" token="33554624" />
+      <entry java-name="androidx/camera/core/impl/CameraInternal" managed-type-name="AndroidX.Camera.Core.Impl.ICameraInternalInvoker" token="33554626" />
+      <entry java-name="androidx/camera/core/impl/CaptureBundle" managed-type-name="AndroidX.Camera.Core.Impl.ICaptureBundleInvoker" token="33554628" />
+      <entry java-name="androidx/camera/core/impl/CaptureStage" managed-type-name="AndroidX.Camera.Core.Impl.ICaptureStageInvoker" token="33554630" />
+      <entry java-name="androidx/camera/core/impl/Config$Option" managed-type-name="AndroidX.Camera.Core.Impl.ConfigOptionInvoker" token="33554632" />
+      <entry java-name="androidx/camera/core/impl/Config$OptionMatcher" managed-type-name="AndroidX.Camera.Core.Impl.IConfigOptionMatcherInvoker" token="33554634" />
+      <entry java-name="androidx/camera/core/impl/Config" managed-type-name="AndroidX.Camera.Core.Impl.IConfigInvoker" token="33554637" />
+      <entry java-name="androidx/camera/core/impl/ConfigProvider" managed-type-name="AndroidX.Camera.Core.Impl.IConfigProviderInvoker" token="33554639" />
+      <entry java-name="androidx/camera/core/impl/Identifier" managed-type-name="AndroidX.Camera.Core.Impl.IdentifierInvoker" token="33554641" />
+      <entry java-name="androidx/camera/core/impl/EncoderProfilesProvider" managed-type-name="AndroidX.Camera.Core.Impl.IEncoderProfilesProviderInvoker" token="33554643" />
+      <entry java-name="androidx/camera/core/impl/EncoderProfilesProxy$AudioProfileProxy" managed-type-name="AndroidX.Camera.Core.Impl.EncoderProfilesProxyAudioProfileProxyInvoker" token="33554645" />
+      <entry java-name="androidx/camera/core/impl/EncoderProfilesProxy$VideoProfileProxy" managed-type-name="AndroidX.Camera.Core.Impl.EncoderProfilesProxyVideoProfileProxyInvoker" token="33554647" />
+      <entry java-name="androidx/camera/core/impl/EncoderProfilesProxy" managed-type-name="AndroidX.Camera.Core.Impl.IEncoderProfilesProxyInvoker" token="33554649" />
+      <entry java-name="androidx/camera/core/impl/ImageInputConfig$Builder" managed-type-name="AndroidX.Camera.Core.Impl.IImageInputConfigBuilderInvoker" token="33554651" />
+      <entry java-name="androidx/camera/core/impl/ImageInputConfig" managed-type-name="AndroidX.Camera.Core.Impl.IImageInputConfigInvoker" token="33554653" />
+      <entry java-name="androidx/camera/core/impl/ImageOutputConfig$Builder" managed-type-name="AndroidX.Camera.Core.Impl.IImageOutputConfigBuilderInvoker" token="33554655" />
+      <entry java-name="androidx/camera/core/impl/ImageReaderProxy$OnImageAvailableListener" managed-type-name="AndroidX.Camera.Core.Impl.IImageReaderProxyOnImageAvailableListenerInvoker" token="33554657" />
+      <entry java-name="androidx/camera/core/impl/ImageReaderProxy" managed-type-name="AndroidX.Camera.Core.Impl.IImageReaderProxyInvoker" token="33554659" />
+      <entry java-name="androidx/camera/core/impl/MutableConfig" managed-type-name="AndroidX.Camera.Core.Impl.IMutableConfigInvoker" token="33554663" />
+      <entry java-name="androidx/camera/core/impl/Observable$Observer" managed-type-name="AndroidX.Camera.Core.Impl.IObservableObserverInvoker" token="33554665" />
+      <entry java-name="androidx/camera/core/impl/Observable" managed-type-name="AndroidX.Camera.Core.Impl.IObservableInvoker" token="33554667" />
+      <entry java-name="androidx/camera/core/impl/Quirk" managed-type-name="AndroidX.Camera.Core.Impl.IQuirkInvoker" token="33554669" />
+      <entry java-name="androidx/camera/core/impl/ReadableConfig" managed-type-name="AndroidX.Camera.Core.Impl.IReadableConfigInvoker" token="33554671" />
+      <entry java-name="androidx/camera/core/impl/RequestProcessor$Callback" managed-type-name="AndroidX.Camera.Core.Impl.IRequestProcessorCallbackInvoker" token="33554673" />
+      <entry java-name="androidx/camera/core/impl/RequestProcessor$Request" managed-type-name="AndroidX.Camera.Core.Impl.IRequestProcessorRequestInvoker" token="33554675" />
+      <entry java-name="androidx/camera/core/impl/RequestProcessor" managed-type-name="AndroidX.Camera.Core.Impl.IRequestProcessorInvoker" token="33554677" />
+      <entry java-name="androidx/camera/core/impl/SessionProcessor$CaptureCallback" managed-type-name="AndroidX.Camera.Core.Impl.ISessionProcessorCaptureCallbackInvoker" token="33554679" />
+      <entry java-name="androidx/camera/core/impl/SessionProcessor" managed-type-name="AndroidX.Camera.Core.Impl.ISessionProcessorInvoker" token="33554681" />
+      <entry java-name="androidx/camera/core/impl/UseCaseConfig$Builder" managed-type-name="AndroidX.Camera.Core.Impl.IUseCaseConfigBuilderInvoker" token="33554683" />
+      <entry java-name="androidx/camera/core/impl/UseCaseConfig" managed-type-name="AndroidX.Camera.Core.Impl.IUseCaseConfigInvoker" token="33554685" />
+      <entry java-name="androidx/camera/core/impl/UseCaseConfigFactory$Provider" managed-type-name="AndroidX.Camera.Core.Impl.IUseCaseConfigFactoryProviderInvoker" token="33554688" />
+      <entry java-name="androidx/camera/core/impl/UseCaseConfigFactory" managed-type-name="AndroidX.Camera.Core.Impl.IUseCaseConfigFactoryInvoker" token="33554690" />
+      <entry java-name="androidx/camera/core/impl/OutputSurface" managed-type-name="AndroidX.Camera.Core.Impl.OutputSurfaceInvoker" token="33554694" />
+      <entry java-name="androidx/camera/core/impl/OutputSurfaceConfiguration" managed-type-name="AndroidX.Camera.Core.Impl.OutputSurfaceConfigurationInvoker" token="33554696" />
+      <entry java-name="androidx/camera/core/impl/SessionConfig$ErrorListener" managed-type-name="AndroidX.Camera.Core.Impl.SessionConfig/IErrorListenerInvoker" token="33554703" />
+      <entry java-name="androidx/camera/core/impl/SessionConfig$OptionUnpacker" managed-type-name="AndroidX.Camera.Core.Impl.SessionConfig/IOptionUnpackerInvoker" token="33554705" />
+      <entry java-name="androidx/camera/core/impl/SessionConfig$OutputConfig$Builder" managed-type-name="AndroidX.Camera.Core.Impl.SessionConfig/OutputConfig/BuilderInvoker" token="33554708" />
+      <entry java-name="androidx/camera/core/impl/SessionConfig$OutputConfig" managed-type-name="AndroidX.Camera.Core.Impl.SessionConfig/OutputConfigInvoker" token="33554709" />
+      <entry java-name="androidx/camera/core/impl/StreamSpec$Builder" managed-type-name="AndroidX.Camera.Core.Impl.StreamSpec/BuilderInvoker" token="33554713" />
+      <entry java-name="androidx/camera/core/impl/StreamSpec" managed-type-name="AndroidX.Camera.Core.Impl.StreamSpecInvoker" token="33554714" />
+      <entry java-name="androidx/camera/core/impl/SurfaceConfig" managed-type-name="AndroidX.Camera.Core.Impl.SurfaceConfigInvoker" token="33554718" />
+      <entry java-name="androidx/camera/core/impl/SurfaceSizeDefinition" managed-type-name="AndroidX.Camera.Core.Impl.SurfaceSizeDefinitionInvoker" token="33554720" />
+      <entry java-name="androidx/camera/core/concurrent/CameraCoordinator$ConcurrentCameraModeListener" managed-type-name="AndroidX.Camera.Core.Concurrent.ICameraCoordinatorConcurrentCameraModeListenerInvoker" token="33554727" />
+      <entry java-name="androidx/camera/core/concurrent/CameraCoordinator" managed-type-name="AndroidX.Camera.Core.Concurrent.ICameraCoordinatorInvoker" token="33554729" />
+    </duplicates>
+    <types-scratch>
+      <entry key="androidx/camera/core/ImageAnalysis" java-name="androidx/camera/core/ImageAnalysis" managed-type-name="AndroidX.Camera.Core.ImageAnalysis" token="33554483" />
+      <entry key="androidx/camera/core/ImageAnalysis$Builder" java-name="androidx/camera/core/ImageAnalysis$Builder" managed-type-name="AndroidX.Camera.Core.ImageAnalysis/Builder" token="33554484" />
+      <entry key="androidx/camera/core/ImageAnalysis$Analyzer" java-name="androidx/camera/core/ImageAnalysis$Analyzer" managed-type-name="AndroidX.Camera.Core.ImageAnalysis/IAnalyzer" token="33554485" skip-in-java-to-managed="True" />
+      <entry key="androidx/camera/core/ImageAnalysis$Defaults" java-name="androidx/camera/core/ImageAnalysis$Defaults" managed-type-name="AndroidX.Camera.Core.ImageAnalysis/Defaults" token="33554487" />
+      <entry key="androidx/camera/core/ImageCapture" java-name="androidx/camera/core/ImageCapture" managed-type-name="AndroidX.Camera.Core.ImageCapture" token="33554488" />
+      <entry key="androidx/camera/core/ImageCapture$Defaults" java-name="androidx/camera/core/ImageCapture$Defaults" managed-type-name="AndroidX.Camera.Core.ImageCapture/Defaults" token="33554489" />
+      <entry key="androidx/camera/core/ImageCapture$Metadata" java-name="androidx/camera/core/ImageCapture$Metadata" managed-type-name="AndroidX.Camera.Core.ImageCapture/Metadata" token="33554490" />
+      <entry key="androidx/camera/core/ImageCapture$OnImageCapturedCallback" java-name="androidx/camera/core/ImageCapture$OnImageCapturedCallback" managed-type-name="AndroidX.Camera.Core.ImageCapture/OnImageCapturedCallback" token="33554491" />
+      <entry key="androidx/camera/core/ImageCapture$OnImageSavedCallback" java-name="androidx/camera/core/ImageCapture$OnImageSavedCallback" managed-type-name="AndroidX.Camera.Core.ImageCapture/IOnImageSavedCallback" token="33554493" skip-in-java-to-managed="True" />
+      <entry key="androidx/camera/core/ImageCapture$OutputFileOptions" java-name="androidx/camera/core/ImageCapture$OutputFileOptions" managed-type-name="AndroidX.Camera.Core.ImageCapture/OutputFileOptions" token="33554495" />
+      <entry key="androidx/camera/core/ImageCapture$OutputFileResults" java-name="androidx/camera/core/ImageCapture$OutputFileResults" managed-type-name="AndroidX.Camera.Core.ImageCapture/OutputFileResults" token="33554496" />
+      <entry key="androidx/camera/core/ImageCapture$ScreenFlash" java-name="androidx/camera/core/ImageCapture$ScreenFlash" managed-type-name="AndroidX.Camera.Core.ImageCapture/IScreenFlash" token="33554497" skip-in-java-to-managed="True" />
+      <entry key="androidx/camera/core/ImageCapture$ScreenFlashListener" java-name="androidx/camera/core/ImageCapture$ScreenFlashListener" managed-type-name="AndroidX.Camera.Core.ImageCapture/IScreenFlashListener" token="33554499" skip-in-java-to-managed="True" />
+      <entry key="androidx/camera/core/Preview" java-name="androidx/camera/core/Preview" managed-type-name="AndroidX.Camera.Core.Preview" token="33554501" />
+      <entry key="androidx/camera/core/Preview$Builder" java-name="androidx/camera/core/Preview$Builder" managed-type-name="AndroidX.Camera.Core.Preview/Builder" token="33554502" />
+      <entry key="androidx/camera/core/Preview$Defaults" java-name="androidx/camera/core/Preview$Defaults" managed-type-name="AndroidX.Camera.Core.Preview/Defaults" token="33554503" />
+      <entry key="androidx/camera/core/Preview$SurfaceProvider" java-name="androidx/camera/core/Preview$SurfaceProvider" managed-type-name="AndroidX.Camera.Core.Preview/ISurfaceProvider" token="33554504" skip-in-java-to-managed="True" />
+      <entry key="androidx/camera/core/CameraEffect" java-name="androidx/camera/core/CameraEffect" managed-type-name="AndroidX.Camera.Core.CameraEffect" token="33554506" />
+      <entry key="androidx/camera/core/CameraSelector" java-name="androidx/camera/core/CameraSelector" managed-type-name="AndroidX.Camera.Core.CameraSelector" token="33554508" />
+      <entry key="androidx/camera/core/CameraXConfig" java-name="androidx/camera/core/CameraXConfig" managed-type-name="AndroidX.Camera.Core.CameraXConfig" token="33554509" />
+      <entry key="androidx/camera/core/ConcurrentCamera" java-name="androidx/camera/core/ConcurrentCamera" managed-type-name="AndroidX.Camera.Core.ConcurrentCamera" token="33554510" />
+      <entry key="androidx/camera/core/ConcurrentCamera$SingleCameraConfig" java-name="androidx/camera/core/ConcurrentCamera$SingleCameraConfig" managed-type-name="AndroidX.Camera.Core.ConcurrentCamera/SingleCameraConfig" token="33554511" />
+      <entry key="androidx/camera/core/DynamicRange" java-name="androidx/camera/core/DynamicRange" managed-type-name="AndroidX.Camera.Core.DynamicRange" token="33554512" />
+      <entry key="androidx/camera/core/FocusMeteringAction" java-name="androidx/camera/core/FocusMeteringAction" managed-type-name="AndroidX.Camera.Core.FocusMeteringAction" token="33554513" />
+      <entry key="androidx/camera/core/FocusMeteringAction$Builder" java-name="androidx/camera/core/FocusMeteringAction$Builder" managed-type-name="AndroidX.Camera.Core.FocusMeteringAction/Builder" token="33554514" />
+      <entry key="androidx/camera/core/Camera" java-name="androidx/camera/core/Camera" managed-type-name="AndroidX.Camera.Core.ICamera" token="33554515" skip-in-java-to-managed="True" />
+      <entry key="androidx/camera/core/CameraControl" java-name="androidx/camera/core/CameraControl" managed-type-name="AndroidX.Camera.Core.ICameraControl" token="33554517" skip-in-java-to-managed="True" />
+      <entry key="androidx/camera/core/CameraInfo" java-name="androidx/camera/core/CameraInfo" managed-type-name="AndroidX.Camera.Core.ICameraInfo" token="33554519" skip-in-java-to-managed="True" />
+      <entry key="androidx/camera/core/ExposureState" java-name="androidx/camera/core/ExposureState" managed-type-name="AndroidX.Camera.Core.IExposureState" token="33554521" skip-in-java-to-managed="True" />
+      <entry key="androidx/camera/core/ExtendableBuilder" java-name="androidx/camera/core/ExtendableBuilder" managed-type-name="AndroidX.Camera.Core.IExtendableBuilder" token="33554523" skip-in-java-to-managed="True" />
+      <entry key="androidx/camera/core/ImageCaptureCapabilities" java-name="androidx/camera/core/ImageCaptureCapabilities" managed-type-name="AndroidX.Camera.Core.IImageCaptureCapabilities" token="33554525" skip-in-java-to-managed="True" />
+      <entry key="androidx/camera/core/ImageInfo" java-name="androidx/camera/core/ImageInfo" managed-type-name="AndroidX.Camera.Core.IImageInfo" token="33554527" skip-in-java-to-managed="True" />
+      <entry key="androidx/camera/core/ImageProcessor$Request" java-name="androidx/camera/core/ImageProcessor$Request" managed-type-name="AndroidX.Camera.Core.IImageProcessorRequest" token="33554529" skip-in-java-to-managed="True" />
+      <entry key="androidx/camera/core/ImageProcessor$Response" java-name="androidx/camera/core/ImageProcessor$Response" managed-type-name="AndroidX.Camera.Core.IImageProcessorResponse" token="33554531" skip-in-java-to-managed="True" />
+      <entry key="androidx/camera/core/ImageProcessor" java-name="androidx/camera/core/ImageProcessor" managed-type-name="AndroidX.Camera.Core.IImageProcessor" token="33554533" skip-in-java-to-managed="True" />
+      <entry key="androidx/camera/core/ImageProxy$PlaneProxy" java-name="androidx/camera/core/ImageProxy$PlaneProxy" managed-type-name="AndroidX.Camera.Core.IImageProxyPlaneProxy" token="33554535" skip-in-java-to-managed="True" />
+      <entry key="androidx/camera/core/ImageProxy" java-name="androidx/camera/core/ImageProxy" managed-type-name="AndroidX.Camera.Core.IImageProxy" token="33554537" skip-in-java-to-managed="True" />
+      <entry key="androidx/camera/core/ImageReaderProxyProvider" java-name="androidx/camera/core/ImageReaderProxyProvider" managed-type-name="AndroidX.Camera.Core.IImageReaderProxyProvider" token="33554539" skip-in-java-to-managed="True" />
+      <entry key="androidx/camera/core/ImageCaptureException" java-name="androidx/camera/core/ImageCaptureException" managed-type-name="AndroidX.Camera.Core.ImageCaptureException" token="33554541" />
+      <entry key="androidx/camera/core/ImageCaptureLatencyEstimate" java-name="androidx/camera/core/ImageCaptureLatencyEstimate" managed-type-name="AndroidX.Camera.Core.ImageCaptureLatencyEstimate" token="33554542" />
+      <entry key="androidx/camera/core/PreviewCapabilities" java-name="androidx/camera/core/PreviewCapabilities" managed-type-name="AndroidX.Camera.Core.IPreviewCapabilities" token="33554543" skip-in-java-to-managed="True" />
+      <entry key="androidx/camera/core/RetryPolicy$ExecutionState" java-name="androidx/camera/core/RetryPolicy$ExecutionState" managed-type-name="AndroidX.Camera.Core.IRetryPolicyExecutionState" token="33554545" skip-in-java-to-managed="True" />
+      <entry key="androidx/camera/core/RetryPolicy$RetryConfig" java-name="androidx/camera/core/RetryPolicy$RetryConfig" managed-type-name="AndroidX.Camera.Core.RetryPolicyRetryConfig" token="33554547" />
+      <entry key="androidx/camera/core/RetryPolicy" java-name="androidx/camera/core/RetryPolicy" managed-type-name="AndroidX.Camera.Core.IRetryPolicy" token="33554548" skip-in-java-to-managed="True" />
+      <entry key="androidx/camera/core/SurfaceOutput$CameraInputInfo" java-name="androidx/camera/core/SurfaceOutput$CameraInputInfo" managed-type-name="AndroidX.Camera.Core.SurfaceOutputCameraInputInfo" token="33554550" />
+      <entry key="androidx/camera/core/SurfaceOutput" java-name="androidx/camera/core/SurfaceOutput" managed-type-name="AndroidX.Camera.Core.ISurfaceOutput" token="33554552" skip-in-java-to-managed="True" />
+      <entry key="androidx/camera/core/SurfaceProcessor" java-name="androidx/camera/core/SurfaceProcessor" managed-type-name="AndroidX.Camera.Core.ISurfaceProcessor" token="33554554" skip-in-java-to-managed="True" />
+      <entry key="androidx/camera/core/LayoutSettings" java-name="androidx/camera/core/LayoutSettings" managed-type-name="AndroidX.Camera.Core.LayoutSettings" token="33554556" />
+      <entry key="androidx/camera/core/MeteringPoint" java-name="androidx/camera/core/MeteringPoint" managed-type-name="AndroidX.Camera.Core.MeteringPoint" token="33554557" />
+      <entry key="androidx/camera/core/MeteringPointFactory" java-name="androidx/camera/core/MeteringPointFactory" managed-type-name="AndroidX.Camera.Core.MeteringPointFactory" token="33554558" />
+      <entry key="androidx/camera/core/ResolutionInfo" java-name="androidx/camera/core/ResolutionInfo" managed-type-name="AndroidX.Camera.Core.ResolutionInfo" token="33554560" />
+      <entry key="androidx/camera/core/SurfaceRequest" java-name="androidx/camera/core/SurfaceRequest" managed-type-name="AndroidX.Camera.Core.SurfaceRequest" token="33554561" />
+      <entry key="androidx/camera/core/SurfaceRequest$TransformationInfo" java-name="androidx/camera/core/SurfaceRequest$TransformationInfo" managed-type-name="AndroidX.Camera.Core.SurfaceRequest/TransformationInfo" token="33554562" />
+      <entry key="androidx/camera/core/SurfaceRequest$TransformationInfoListener" java-name="androidx/camera/core/SurfaceRequest$TransformationInfoListener" managed-type-name="AndroidX.Camera.Core.SurfaceRequest/ITransformationInfoListener" token="33554564" skip-in-java-to-managed="True" />
+      <entry key="androidx/camera/core/UseCase" java-name="androidx/camera/core/UseCase" managed-type-name="AndroidX.Camera.Core.UseCase" token="33554566" />
+      <entry key="androidx/camera/core/UseCase$StateChangeCallback" java-name="androidx/camera/core/UseCase$StateChangeCallback" managed-type-name="AndroidX.Camera.Core.UseCase/IStateChangeCallback" token="33554567" skip-in-java-to-managed="True" />
+      <entry key="androidx/camera/core/UseCaseGroup" java-name="androidx/camera/core/UseCaseGroup" managed-type-name="AndroidX.Camera.Core.UseCaseGroup" token="33554570" />
+      <entry key="androidx/camera/core/ViewPort" java-name="androidx/camera/core/ViewPort" managed-type-name="AndroidX.Camera.Core.ViewPort" token="33554571" />
+      <entry key="androidx/camera/core/resolutionselector/AspectRatioStrategy" java-name="androidx/camera/core/resolutionselector/AspectRatioStrategy" managed-type-name="AndroidX.Camera.Core.ResolutionSelector.AspectRatioStrategy" token="33554572" />
+      <entry key="androidx/camera/core/resolutionselector/ResolutionFilter" java-name="androidx/camera/core/resolutionselector/ResolutionFilter" managed-type-name="AndroidX.Camera.Core.ResolutionSelector.IResolutionFilter" token="33554573" skip-in-java-to-managed="True" />
+      <entry key="androidx/camera/core/resolutionselector/ResolutionSelector" java-name="androidx/camera/core/resolutionselector/ResolutionSelector" managed-type-name="AndroidX.Camera.Core.ResolutionSelector.ResolutionSelector" token="33554575" />
+      <entry key="androidx/camera/core/resolutionselector/ResolutionSelector$Builder" java-name="androidx/camera/core/resolutionselector/ResolutionSelector$Builder" managed-type-name="AndroidX.Camera.Core.ResolutionSelector.ResolutionSelector/Builder" token="33554576" />
+      <entry key="androidx/camera/core/resolutionselector/ResolutionStrategy" java-name="androidx/camera/core/resolutionselector/ResolutionStrategy" managed-type-name="AndroidX.Camera.Core.ResolutionSelector.ResolutionStrategy" token="33554577" />
+      <entry key="androidx/camera/core/processing/SurfaceProcessorInternal" java-name="androidx/camera/core/processing/SurfaceProcessorInternal" managed-type-name="AndroidX.Camera.Core.Processing.ISurfaceProcessorInternal" token="33554578" skip-in-java-to-managed="True" />
+      <entry key="androidx/camera/core/processing/SurfaceEdge" java-name="androidx/camera/core/processing/SurfaceEdge" managed-type-name="AndroidX.Camera.Core.Processing.SurfaceEdge" token="33554580" />
+      <entry key="androidx/camera/core/internal/TargetConfig$Builder" java-name="androidx/camera/core/internal/TargetConfig$Builder" managed-type-name="AndroidX.Camera.Core.Internal.ITargetConfigBuilder" token="33554581" skip-in-java-to-managed="True" />
+      <entry key="androidx/camera/core/internal/TargetConfig" java-name="androidx/camera/core/internal/TargetConfig" managed-type-name="AndroidX.Camera.Core.Internal.ITargetConfig" token="33554583" skip-in-java-to-managed="True" />
+      <entry key="androidx/camera/core/internal/ThreadConfig$Builder" java-name="androidx/camera/core/internal/ThreadConfig$Builder" managed-type-name="AndroidX.Camera.Core.Internal.IThreadConfigBuilder" token="33554585" skip-in-java-to-managed="True" />
+      <entry key="androidx/camera/core/impl/AttachedSurfaceInfo" java-name="androidx/camera/core/impl/AttachedSurfaceInfo" managed-type-name="AndroidX.Camera.Core.Impl.AttachedSurfaceInfo" token="33554587" />
+      <entry key="androidx/camera/core/impl/CameraCaptureCallback" java-name="androidx/camera/core/impl/CameraCaptureCallback" managed-type-name="AndroidX.Camera.Core.Impl.CameraCaptureCallback" token="33554589" />
+      <entry key="androidx/camera/core/impl/CameraCaptureFailure" java-name="androidx/camera/core/impl/CameraCaptureFailure" managed-type-name="AndroidX.Camera.Core.Impl.CameraCaptureFailure" token="33554591" />
+      <entry key="androidx/camera/core/impl/CameraCaptureFailure$Reason" java-name="androidx/camera/core/impl/CameraCaptureFailure$Reason" managed-type-name="AndroidX.Camera.Core.Impl.CameraCaptureFailure/Reason" token="33554592" />
+      <entry key="androidx/camera/core/impl/CameraCaptureMetaData" java-name="androidx/camera/core/impl/CameraCaptureMetaData" managed-type-name="AndroidX.Camera.Core.Impl.CameraCaptureMetaData" token="33554593" />
+      <entry key="androidx/camera/core/impl/CameraCaptureMetaData$AeMode" java-name="androidx/camera/core/impl/CameraCaptureMetaData$AeMode" managed-type-name="AndroidX.Camera.Core.Impl.CameraCaptureMetaData/AeMode" token="33554594" />
+      <entry key="androidx/camera/core/impl/CameraCaptureMetaData$AeState" java-name="androidx/camera/core/impl/CameraCaptureMetaData$AeState" managed-type-name="AndroidX.Camera.Core.Impl.CameraCaptureMetaData/AeState" token="33554595" />
+      <entry key="androidx/camera/core/impl/CameraCaptureMetaData$AfMode" java-name="androidx/camera/core/impl/CameraCaptureMetaData$AfMode" managed-type-name="AndroidX.Camera.Core.Impl.CameraCaptureMetaData/AfMode" token="33554596" />
+      <entry key="androidx/camera/core/impl/CameraCaptureMetaData$AfState" java-name="androidx/camera/core/impl/CameraCaptureMetaData$AfState" managed-type-name="AndroidX.Camera.Core.Impl.CameraCaptureMetaData/AfState" token="33554597" />
+      <entry key="androidx/camera/core/impl/CameraCaptureMetaData$AwbMode" java-name="androidx/camera/core/impl/CameraCaptureMetaData$AwbMode" managed-type-name="AndroidX.Camera.Core.Impl.CameraCaptureMetaData/AwbMode" token="33554598" />
+      <entry key="androidx/camera/core/impl/CameraCaptureMetaData$AwbState" java-name="androidx/camera/core/impl/CameraCaptureMetaData$AwbState" managed-type-name="AndroidX.Camera.Core.Impl.CameraCaptureMetaData/AwbState" token="33554599" />
+      <entry key="androidx/camera/core/impl/CameraCaptureMetaData$FlashState" java-name="androidx/camera/core/impl/CameraCaptureMetaData$FlashState" managed-type-name="AndroidX.Camera.Core.Impl.CameraCaptureMetaData/FlashState" token="33554600" />
+      <entry key="androidx/camera/core/impl/CameraThreadConfig" java-name="androidx/camera/core/impl/CameraThreadConfig" managed-type-name="AndroidX.Camera.Core.Impl.CameraThreadConfig" token="33554601" />
+      <entry key="androidx/camera/core/impl/CaptureConfig" java-name="androidx/camera/core/impl/CaptureConfig" managed-type-name="AndroidX.Camera.Core.Impl.CaptureConfig" token="33554603" />
+      <entry key="androidx/camera/core/impl/CaptureConfig$Builder" java-name="androidx/camera/core/impl/CaptureConfig$Builder" managed-type-name="AndroidX.Camera.Core.Impl.CaptureConfig/Builder" token="33554604" />
+      <entry key="androidx/camera/core/impl/CaptureConfig$OptionUnpacker" java-name="androidx/camera/core/impl/CaptureConfig$OptionUnpacker" managed-type-name="AndroidX.Camera.Core.Impl.CaptureConfig/IOptionUnpacker" token="33554605" skip-in-java-to-managed="True" />
+      <entry key="androidx/camera/core/impl/DeferrableSurface" java-name="androidx/camera/core/impl/DeferrableSurface" managed-type-name="AndroidX.Camera.Core.Impl.DeferrableSurface" token="33554607" />
+      <entry key="androidx/camera/core/impl/CameraCaptureResult" java-name="androidx/camera/core/impl/CameraCaptureResult" managed-type-name="AndroidX.Camera.Core.Impl.ICameraCaptureResult" token="33554609" skip-in-java-to-managed="True" />
+      <entry key="androidx/camera/core/impl/CameraConfig" java-name="androidx/camera/core/impl/CameraConfig" managed-type-name="AndroidX.Camera.Core.Impl.ICameraConfig" token="33554611" skip-in-java-to-managed="True" />
+      <entry key="androidx/camera/core/impl/CameraControlInternal" java-name="androidx/camera/core/impl/CameraControlInternal" managed-type-name="AndroidX.Camera.Core.Impl.ICameraControlInternal" token="33554613" skip-in-java-to-managed="True" />
+      <entry key="androidx/camera/core/impl/CameraDeviceSurfaceManager$Provider" java-name="androidx/camera/core/impl/CameraDeviceSurfaceManager$Provider" managed-type-name="AndroidX.Camera.Core.Impl.ICameraDeviceSurfaceManagerProvider" token="33554615" skip-in-java-to-managed="True" />
+      <entry key="androidx/camera/core/impl/CameraDeviceSurfaceManager" java-name="androidx/camera/core/impl/CameraDeviceSurfaceManager" managed-type-name="AndroidX.Camera.Core.Impl.ICameraDeviceSurfaceManager" token="33554617" skip-in-java-to-managed="True" />
+      <entry key="androidx/camera/core/impl/CameraFactory$Provider" java-name="androidx/camera/core/impl/CameraFactory$Provider" managed-type-name="AndroidX.Camera.Core.Impl.ICameraFactoryProvider" token="33554619" skip-in-java-to-managed="True" />
+      <entry key="androidx/camera/core/impl/CameraFactory" java-name="androidx/camera/core/impl/CameraFactory" managed-type-name="AndroidX.Camera.Core.Impl.ICameraFactory" token="33554621" skip-in-java-to-managed="True" />
+      <entry key="androidx/camera/core/impl/CameraInfoInternal" java-name="androidx/camera/core/impl/CameraInfoInternal" managed-type-name="AndroidX.Camera.Core.Impl.ICameraInfoInternal" token="33554623" skip-in-java-to-managed="True" />
+      <entry key="androidx/camera/core/impl/CameraInternal" java-name="androidx/camera/core/impl/CameraInternal" managed-type-name="AndroidX.Camera.Core.Impl.ICameraInternal" token="33554625" skip-in-java-to-managed="True" />
+      <entry key="androidx/camera/core/impl/CaptureBundle" java-name="androidx/camera/core/impl/CaptureBundle" managed-type-name="AndroidX.Camera.Core.Impl.ICaptureBundle" token="33554627" skip-in-java-to-managed="True" />
+      <entry key="androidx/camera/core/impl/CaptureStage" java-name="androidx/camera/core/impl/CaptureStage" managed-type-name="AndroidX.Camera.Core.Impl.ICaptureStage" token="33554629" skip-in-java-to-managed="True" />
+      <entry key="androidx/camera/core/impl/Config$Option" java-name="androidx/camera/core/impl/Config$Option" managed-type-name="AndroidX.Camera.Core.Impl.ConfigOption" token="33554631" />
+      <entry key="androidx/camera/core/impl/Config$OptionMatcher" java-name="androidx/camera/core/impl/Config$OptionMatcher" managed-type-name="AndroidX.Camera.Core.Impl.IConfigOptionMatcher" token="33554633" skip-in-java-to-managed="True" />
+      <entry key="androidx/camera/core/impl/Config$OptionPriority" java-name="androidx/camera/core/impl/Config$OptionPriority" managed-type-name="AndroidX.Camera.Core.Impl.ConfigOptionPriority" token="33554635" />
+      <entry key="androidx/camera/core/impl/Config" java-name="androidx/camera/core/impl/Config" managed-type-name="AndroidX.Camera.Core.Impl.IConfig" token="33554636" skip-in-java-to-managed="True" />
+      <entry key="androidx/camera/core/impl/ConfigProvider" java-name="androidx/camera/core/impl/ConfigProvider" managed-type-name="AndroidX.Camera.Core.Impl.IConfigProvider" token="33554638" skip-in-java-to-managed="True" />
+      <entry key="androidx/camera/core/impl/Identifier" java-name="androidx/camera/core/impl/Identifier" managed-type-name="AndroidX.Camera.Core.Impl.Identifier" token="33554640" />
+      <entry key="androidx/camera/core/impl/EncoderProfilesProvider" java-name="androidx/camera/core/impl/EncoderProfilesProvider" managed-type-name="AndroidX.Camera.Core.Impl.IEncoderProfilesProvider" token="33554642" skip-in-java-to-managed="True" />
+      <entry key="androidx/camera/core/impl/EncoderProfilesProxy$AudioProfileProxy" java-name="androidx/camera/core/impl/EncoderProfilesProxy$AudioProfileProxy" managed-type-name="AndroidX.Camera.Core.Impl.EncoderProfilesProxyAudioProfileProxy" token="33554644" />
+      <entry key="androidx/camera/core/impl/EncoderProfilesProxy$VideoProfileProxy" java-name="androidx/camera/core/impl/EncoderProfilesProxy$VideoProfileProxy" managed-type-name="AndroidX.Camera.Core.Impl.EncoderProfilesProxyVideoProfileProxy" token="33554646" />
+      <entry key="androidx/camera/core/impl/EncoderProfilesProxy" java-name="androidx/camera/core/impl/EncoderProfilesProxy" managed-type-name="AndroidX.Camera.Core.Impl.IEncoderProfilesProxy" token="33554648" skip-in-java-to-managed="True" />
+      <entry key="androidx/camera/core/impl/ImageInputConfig$Builder" java-name="androidx/camera/core/impl/ImageInputConfig$Builder" managed-type-name="AndroidX.Camera.Core.Impl.IImageInputConfigBuilder" token="33554650" skip-in-java-to-managed="True" />
+      <entry key="androidx/camera/core/impl/ImageInputConfig" java-name="androidx/camera/core/impl/ImageInputConfig" managed-type-name="AndroidX.Camera.Core.Impl.IImageInputConfig" token="33554652" skip-in-java-to-managed="True" />
+      <entry key="androidx/camera/core/impl/ImageOutputConfig$Builder" java-name="androidx/camera/core/impl/ImageOutputConfig$Builder" managed-type-name="AndroidX.Camera.Core.Impl.IImageOutputConfigBuilder" token="33554654" skip-in-java-to-managed="True" />
+      <entry key="androidx/camera/core/impl/ImageReaderProxy$OnImageAvailableListener" java-name="androidx/camera/core/impl/ImageReaderProxy$OnImageAvailableListener" managed-type-name="AndroidX.Camera.Core.Impl.IImageReaderProxyOnImageAvailableListener" token="33554656" skip-in-java-to-managed="True" />
+      <entry key="androidx/camera/core/impl/ImageReaderProxy" java-name="androidx/camera/core/impl/ImageReaderProxy" managed-type-name="AndroidX.Camera.Core.Impl.IImageReaderProxy" token="33554658" skip-in-java-to-managed="True" />
+      <entry key="androidx/camera/core/impl/ImageAnalysisConfig" java-name="androidx/camera/core/impl/ImageAnalysisConfig" managed-type-name="AndroidX.Camera.Core.Impl.ImageAnalysisConfig" token="33554660" />
+      <entry key="androidx/camera/core/impl/ImageCaptureConfig" java-name="androidx/camera/core/impl/ImageCaptureConfig" managed-type-name="AndroidX.Camera.Core.Impl.ImageCaptureConfig" token="33554661" />
+      <entry key="androidx/camera/core/impl/MutableConfig" java-name="androidx/camera/core/impl/MutableConfig" managed-type-name="AndroidX.Camera.Core.Impl.IMutableConfig" token="33554662" skip-in-java-to-managed="True" />
+      <entry key="androidx/camera/core/impl/Observable$Observer" java-name="androidx/camera/core/impl/Observable$Observer" managed-type-name="AndroidX.Camera.Core.Impl.IObservableObserver" token="33554664" skip-in-java-to-managed="True" />
+      <entry key="androidx/camera/core/impl/Observable" java-name="androidx/camera/core/impl/Observable" managed-type-name="AndroidX.Camera.Core.Impl.IObservable" token="33554666" skip-in-java-to-managed="True" />
+      <entry key="androidx/camera/core/impl/Quirk" java-name="androidx/camera/core/impl/Quirk" managed-type-name="AndroidX.Camera.Core.Impl.IQuirk" token="33554668" skip-in-java-to-managed="True" />
+      <entry key="androidx/camera/core/impl/ReadableConfig" java-name="androidx/camera/core/impl/ReadableConfig" managed-type-name="AndroidX.Camera.Core.Impl.IReadableConfig" token="33554670" skip-in-java-to-managed="True" />
+      <entry key="androidx/camera/core/impl/RequestProcessor$Callback" java-name="androidx/camera/core/impl/RequestProcessor$Callback" managed-type-name="AndroidX.Camera.Core.Impl.IRequestProcessorCallback" token="33554672" skip-in-java-to-managed="True" />
+      <entry key="androidx/camera/core/impl/RequestProcessor$Request" java-name="androidx/camera/core/impl/RequestProcessor$Request" managed-type-name="AndroidX.Camera.Core.Impl.IRequestProcessorRequest" token="33554674" skip-in-java-to-managed="True" />
+      <entry key="androidx/camera/core/impl/RequestProcessor" java-name="androidx/camera/core/impl/RequestProcessor" managed-type-name="AndroidX.Camera.Core.Impl.IRequestProcessor" token="33554676" skip-in-java-to-managed="True" />
+      <entry key="androidx/camera/core/impl/SessionProcessor$CaptureCallback" java-name="androidx/camera/core/impl/SessionProcessor$CaptureCallback" managed-type-name="AndroidX.Camera.Core.Impl.ISessionProcessorCaptureCallback" token="33554678" skip-in-java-to-managed="True" />
+      <entry key="androidx/camera/core/impl/SessionProcessor" java-name="androidx/camera/core/impl/SessionProcessor" managed-type-name="AndroidX.Camera.Core.Impl.ISessionProcessor" token="33554680" skip-in-java-to-managed="True" />
+      <entry key="androidx/camera/core/impl/UseCaseConfig$Builder" java-name="androidx/camera/core/impl/UseCaseConfig$Builder" managed-type-name="AndroidX.Camera.Core.Impl.IUseCaseConfigBuilder" token="33554682" skip-in-java-to-managed="True" />
+      <entry key="androidx/camera/core/impl/UseCaseConfig" java-name="androidx/camera/core/impl/UseCaseConfig" managed-type-name="AndroidX.Camera.Core.Impl.IUseCaseConfig" token="33554684" skip-in-java-to-managed="True" />
+      <entry key="androidx/camera/core/impl/UseCaseConfigFactory$CaptureType" java-name="androidx/camera/core/impl/UseCaseConfigFactory$CaptureType" managed-type-name="AndroidX.Camera.Core.Impl.UseCaseConfigFactoryCaptureType" token="33554686" />
+      <entry key="androidx/camera/core/impl/UseCaseConfigFactory$Provider" java-name="androidx/camera/core/impl/UseCaseConfigFactory$Provider" managed-type-name="AndroidX.Camera.Core.Impl.IUseCaseConfigFactoryProvider" token="33554687" skip-in-java-to-managed="True" />
+      <entry key="androidx/camera/core/impl/UseCaseConfigFactory" java-name="androidx/camera/core/impl/UseCaseConfigFactory" managed-type-name="AndroidX.Camera.Core.Impl.IUseCaseConfigFactory" token="33554689" skip-in-java-to-managed="True" />
+      <entry key="androidx/camera/core/impl/MutableOptionsBundle" java-name="androidx/camera/core/impl/MutableOptionsBundle" managed-type-name="AndroidX.Camera.Core.Impl.MutableOptionsBundle" token="33554691" />
+      <entry key="androidx/camera/core/impl/OptionsBundle" java-name="androidx/camera/core/impl/OptionsBundle" managed-type-name="AndroidX.Camera.Core.Impl.OptionsBundle" token="33554692" />
+      <entry key="androidx/camera/core/impl/OutputSurface" java-name="androidx/camera/core/impl/OutputSurface" managed-type-name="AndroidX.Camera.Core.Impl.OutputSurface" token="33554693" />
+      <entry key="androidx/camera/core/impl/OutputSurfaceConfiguration" java-name="androidx/camera/core/impl/OutputSurfaceConfiguration" managed-type-name="AndroidX.Camera.Core.Impl.OutputSurfaceConfiguration" token="33554695" />
+      <entry key="androidx/camera/core/impl/PreviewConfig" java-name="androidx/camera/core/impl/PreviewConfig" managed-type-name="AndroidX.Camera.Core.Impl.PreviewConfig" token="33554697" />
+      <entry key="androidx/camera/core/impl/Quirks" java-name="androidx/camera/core/impl/Quirks" managed-type-name="AndroidX.Camera.Core.Impl.Quirks" token="33554698" />
+      <entry key="androidx/camera/core/impl/QuirkSettings" java-name="androidx/camera/core/impl/QuirkSettings" managed-type-name="AndroidX.Camera.Core.Impl.QuirkSettings" token="33554699" />
+      <entry key="androidx/camera/core/impl/SessionConfig" java-name="androidx/camera/core/impl/SessionConfig" managed-type-name="AndroidX.Camera.Core.Impl.SessionConfig" token="33554700" />
+      <entry key="androidx/camera/core/impl/SessionConfig$Builder" java-name="androidx/camera/core/impl/SessionConfig$Builder" managed-type-name="AndroidX.Camera.Core.Impl.SessionConfig/Builder" token="33554701" />
+      <entry key="androidx/camera/core/impl/SessionConfig$ErrorListener" java-name="androidx/camera/core/impl/SessionConfig$ErrorListener" managed-type-name="AndroidX.Camera.Core.Impl.SessionConfig/IErrorListener" token="33554702" skip-in-java-to-managed="True" />
+      <entry key="androidx/camera/core/impl/SessionConfig$OptionUnpacker" java-name="androidx/camera/core/impl/SessionConfig$OptionUnpacker" managed-type-name="AndroidX.Camera.Core.Impl.SessionConfig/IOptionUnpacker" token="33554704" skip-in-java-to-managed="True" />
+      <entry key="androidx/camera/core/impl/SessionConfig$OutputConfig" java-name="androidx/camera/core/impl/SessionConfig$OutputConfig" managed-type-name="AndroidX.Camera.Core.Impl.SessionConfig/OutputConfig" token="33554706" />
+      <entry key="androidx/camera/core/impl/SessionConfig$OutputConfig$Builder" java-name="androidx/camera/core/impl/SessionConfig$OutputConfig$Builder" managed-type-name="AndroidX.Camera.Core.Impl.SessionConfig/OutputConfig/Builder" token="33554707" />
+      <entry key="androidx/camera/core/impl/SessionConfig$SessionError" java-name="androidx/camera/core/impl/SessionConfig$SessionError" managed-type-name="AndroidX.Camera.Core.Impl.SessionConfig/SessionError" token="33554710" />
+      <entry key="androidx/camera/core/impl/StreamSpec" java-name="androidx/camera/core/impl/StreamSpec" managed-type-name="AndroidX.Camera.Core.Impl.StreamSpec" token="33554711" />
+      <entry key="androidx/camera/core/impl/StreamSpec$Builder" java-name="androidx/camera/core/impl/StreamSpec$Builder" managed-type-name="AndroidX.Camera.Core.Impl.StreamSpec/Builder" token="33554712" />
+      <entry key="androidx/camera/core/impl/SurfaceConfig" java-name="androidx/camera/core/impl/SurfaceConfig" managed-type-name="AndroidX.Camera.Core.Impl.SurfaceConfig" token="33554715" />
+      <entry key="androidx/camera/core/impl/SurfaceConfig$ConfigSize" java-name="androidx/camera/core/impl/SurfaceConfig$ConfigSize" managed-type-name="AndroidX.Camera.Core.Impl.SurfaceConfig/ConfigSize" token="33554716" />
+      <entry key="androidx/camera/core/impl/SurfaceConfig$ConfigType" java-name="androidx/camera/core/impl/SurfaceConfig$ConfigType" managed-type-name="AndroidX.Camera.Core.Impl.SurfaceConfig/ConfigType" token="33554717" />
+      <entry key="androidx/camera/core/impl/SurfaceSizeDefinition" java-name="androidx/camera/core/impl/SurfaceSizeDefinition" managed-type-name="AndroidX.Camera.Core.Impl.SurfaceSizeDefinition" token="33554719" />
+      <entry key="androidx/camera/core/impl/TagBundle" java-name="androidx/camera/core/impl/TagBundle" managed-type-name="AndroidX.Camera.Core.Impl.TagBundle" token="33554721" />
+      <entry key="androidx/camera/core/impl/Timebase" java-name="androidx/camera/core/impl/Timebase" managed-type-name="AndroidX.Camera.Core.Impl.Timebase" token="33554722" />
+      <entry key="androidx/camera/core/impl/utils/ExifData" java-name="androidx/camera/core/impl/utils/ExifData" managed-type-name="AndroidX.Camera.Core.Impl.Utils.ExifData" token="33554723" />
+      <entry key="androidx/camera/core/impl/utils/ExifData$Builder" java-name="androidx/camera/core/impl/utils/ExifData$Builder" managed-type-name="AndroidX.Camera.Core.Impl.Utils.ExifData/Builder" token="33554724" />
+      <entry key="androidx/camera/core/impl/utils/ExifData$WhiteBalanceMode" java-name="androidx/camera/core/impl/utils/ExifData$WhiteBalanceMode" managed-type-name="AndroidX.Camera.Core.Impl.Utils.ExifData/WhiteBalanceMode" token="33554725" />
+      <entry key="androidx/camera/core/concurrent/CameraCoordinator$ConcurrentCameraModeListener" java-name="androidx/camera/core/concurrent/CameraCoordinator$ConcurrentCameraModeListener" managed-type-name="AndroidX.Camera.Core.Concurrent.ICameraCoordinatorConcurrentCameraModeListener" token="33554726" skip-in-java-to-managed="True" />
+      <entry key="androidx/camera/core/concurrent/CameraCoordinator" java-name="androidx/camera/core/concurrent/CameraCoordinator" managed-type-name="AndroidX.Camera.Core.Concurrent.ICameraCoordinator" token="33554728" skip-in-java-to-managed="True" />
+    </types-scratch>
+  </module>
+</api>

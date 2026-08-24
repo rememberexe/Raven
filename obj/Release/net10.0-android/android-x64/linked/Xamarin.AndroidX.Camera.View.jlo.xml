@@ -1,0 +1,5 @@
+<api>
+  <acw-types partial-assembly-name="Xamarin.AndroidX.Camera.View" module-name="Xamarin.AndroidX.Camera.View.dll">
+    <type assembly-qualified-name="AndroidX.Camera.View.PreviewView+IOnFrameUpdateListener, Xamarin.AndroidX.Camera.View, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" compat-jni-name="androidx.camera.view.PreviewView$OnFrameUpdateListener" java-key="androidx.camera.view.PreviewView$OnFrameUpdateListener" managed-key="AndroidX.Camera.View.PreviewView.IOnFrameUpdateListener" partial-assembly-qualified-name="AndroidX.Camera.View.PreviewView+IOnFrameUpdateListener, Xamarin.AndroidX.Camera.View" />
+  </acw-types>
+</api>

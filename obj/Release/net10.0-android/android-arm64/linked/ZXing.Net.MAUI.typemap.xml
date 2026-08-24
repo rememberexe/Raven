@@ -1,0 +1,8 @@
+<api type="release" assembly-name="ZXing.Net.MAUI" mvid="f0838f3a446c4ac8bef6a6f7cf9f4dd2">
+  <module assembly-name="ZXing.Net.MAUI" mvid="f0838f3a446c4ac8bef6a6f7cf9f4dd2" mvid-bytes="Oo+D8GxEyEq+9qb3z59N0g==">
+    <types-scratch>
+      <entry key="crc6477b0797571f03227/CameraManager_CameraResolutionFilter" java-name="crc6477b0797571f03227/CameraManager_CameraResolutionFilter" managed-type-name="ZXing.Net.Maui.CameraManager/CameraResolutionFilter" token="33554488" />
+      <entry key="crc6477b0797571f03227/FrameAnalyzer" java-name="crc6477b0797571f03227/FrameAnalyzer" managed-type-name="ZXing.Net.Maui.FrameAnalyzer" token="33554466" />
+    </types-scratch>
+  </module>
+</api>

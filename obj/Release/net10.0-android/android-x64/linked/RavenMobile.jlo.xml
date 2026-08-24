@@ -1,0 +1,78 @@
+<api>
+  <jcw-types>
+    <type name="MainActivity" package="crc64526fb6519b7ee2dd" application_java_class="android.app.Application" mono_runtime_initialization="mono.MonoPackageManager.LoadApplication (context);" extends_type="crc6488302ad6e9e4df1a.MauiAppCompatActivity" partial_assembly_qualified_name="RavenMobile.MainActivity, RavenMobile">
+      <constructors>
+        <constructor name="MainActivity" method="n_.ctor:()V:" jni_signature="()V" managed_parameters="" retval="void" is_dynamically_registered="True" />
+        <constructor name="MainActivity" method="n_.ctor:(I)V:" jni_signature="(I)V" managed_parameters="System.Int32, System.Private.CoreLib" params="int p0" retval="void" is_dynamically_registered="True" super_call="p0" activate_call="p0" />
+      </constructors>
+      <methods>
+        <method name="onCreate" method="n_onCreate:(Landroid/os/Bundle;)V:GetOnCreate_Landroid_os_Bundle_Handler" jni_signature="(Landroid/os/Bundle;)V" params="android.os.Bundle p0" retval="void" super_call="p0" activate_call="p0" />
+        <method name="onResume" method="n_onResume:()V:GetOnResumeHandler" jni_signature="()V" retval="void" />
+      </methods>
+    </type>
+    <type name="MainApplication" package="crc64526fb6519b7ee2dd" application_java_class="android.app.Application" mono_runtime_initialization="mono.MonoPackageManager.LoadApplication (context);" extends_type="crc6488302ad6e9e4df1a.MauiApplication" is_application="True" partial_assembly_qualified_name="RavenMobile.MainApplication, RavenMobile" application_constructor="MainApplication" />
+    <type name="AndroidHotspotService_LocalHotspotCallback" package="crc6421e67ae3323efb58" application_java_class="android.app.Application" mono_runtime_initialization="mono.MonoPackageManager.LoadApplication (context);" extends_type="android.net.wifi.WifiManager.LocalOnlyHotspotCallback" partial_assembly_qualified_name="RavenMobile.Platforms.Android.WifiQr.AndroidHotspotService+LocalHotspotCallback, RavenMobile">
+      <constructors>
+        <constructor name="AndroidHotspotService_LocalHotspotCallback" method="n_.ctor:()V:" jni_signature="()V" managed_parameters="" retval="void" is_dynamically_registered="True" />
+      </constructors>
+      <methods>
+        <method name="onStarted" method="n_onStarted:(Landroid/net/wifi/WifiManager$LocalOnlyHotspotReservation;)V:GetOnStarted_Landroid_net_wifi_WifiManager_LocalOnlyHotspotReservation_Handler" jni_signature="(Landroid/net/wifi/WifiManager$LocalOnlyHotspotReservation;)V" params="android.net.wifi.WifiManager.LocalOnlyHotspotReservation p0" retval="void" super_call="p0" activate_call="p0" />
+        <method name="onStopped" method="n_onStopped:()V:GetOnStoppedHandler" jni_signature="()V" retval="void" />
+        <method name="onFailed" method="n_onFailed:(I)V:GetOnFailed_IHandler" jni_signature="(I)V" params="int p0" retval="void" super_call="p0" activate_call="p0" />
+      </methods>
+    </type>
+    <type name="AndroidWifiJoinService_WifiNetworkCallback" package="crc6421e67ae3323efb58" application_java_class="android.app.Application" mono_runtime_initialization="mono.MonoPackageManager.LoadApplication (context);" extends_type="android.net.ConnectivityManager.NetworkCallback" partial_assembly_qualified_name="RavenMobile.Platforms.Android.WifiQr.AndroidWifiJoinService+WifiNetworkCallback, RavenMobile">
+      <constructors>
+        <constructor name="AndroidWifiJoinService_WifiNetworkCallback" method="n_.ctor:()V:" jni_signature="()V" managed_parameters="" retval="void" is_dynamically_registered="True" />
+      </constructors>
+      <methods>
+        <method name="onAvailable" method="n_onAvailable:(Landroid/net/Network;)V:GetOnAvailable_Landroid_net_Network_Handler" jni_signature="(Landroid/net/Network;)V" params="android.net.Network p0" retval="void" super_call="p0" activate_call="p0" />
+        <method name="onUnavailable" method="n_onUnavailable:()V:GetOnUnavailableHandler" jni_signature="()V" retval="void" />
+        <method name="onLost" method="n_onLost:(Landroid/net/Network;)V:GetOnLost_Landroid_net_Network_Handler" jni_signature="(Landroid/net/Network;)V" params="android.net.Network p0" retval="void" super_call="p0" activate_call="p0" />
+      </methods>
+    </type>
+    <type name="AndroidWifiDirectService" package="crc6436e92e4501d1b601" application_java_class="android.app.Application" mono_runtime_initialization="mono.MonoPackageManager.LoadApplication (context);" extends_type="android.content.BroadcastReceiver" partial_assembly_qualified_name="RavenMobile.Platforms.Android.WifiDirect.AndroidWifiDirectService, RavenMobile">
+      <implemented_interfaces>
+        <interface name="android.net.wifi.p2p.WifiP2pManager.PeerListListener" />
+        <interface name="android.net.wifi.p2p.WifiP2pManager.ConnectionInfoListener" />
+      </implemented_interfaces>
+      <constructors>
+        <constructor name="AndroidWifiDirectService" method="n_.ctor:()V:" jni_signature="()V" managed_parameters="" retval="void" is_dynamically_registered="True" />
+      </constructors>
+      <methods>
+        <method name="onReceive" method="n_onReceive:(Landroid/content/Context;Landroid/content/Intent;)V:GetOnReceive_Landroid_content_Context_Landroid_content_Intent_Handler" jni_signature="(Landroid/content/Context;Landroid/content/Intent;)V" params="android.content.Context p0, android.content.Intent p1" retval="void" super_call="p0, p1" activate_call="p0, p1" />
+        <method name="onPeersAvailable" method="n_onPeersAvailable:(Landroid/net/wifi/p2p/WifiP2pDeviceList;)V:GetOnPeersAvailable_Landroid_net_wifi_p2p_WifiP2pDeviceList_Handler:Android.Net.Wifi.P2p.WifiP2pManager+IPeerListListenerInvoker, Mono.Android, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" jni_signature="(Landroid/net/wifi/p2p/WifiP2pDeviceList;)V" params="android.net.wifi.p2p.WifiP2pDeviceList p0" retval="void" super_call="p0" activate_call="p0" />
+        <method name="onConnectionInfoAvailable" method="n_onConnectionInfoAvailable:(Landroid/net/wifi/p2p/WifiP2pInfo;)V:GetOnConnectionInfoAvailable_Landroid_net_wifi_p2p_WifiP2pInfo_Handler:Android.Net.Wifi.P2p.WifiP2pManager+IConnectionInfoListenerInvoker, Mono.Android, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" jni_signature="(Landroid/net/wifi/p2p/WifiP2pInfo;)V" params="android.net.wifi.p2p.WifiP2pInfo p0" retval="void" super_call="p0" activate_call="p0" />
+      </methods>
+    </type>
+    <type name="AndroidWifiDirectService_ActionListener" package="crc6436e92e4501d1b601" application_java_class="android.app.Application" mono_runtime_initialization="mono.MonoPackageManager.LoadApplication (context);" extends_type="java.lang.Object" partial_assembly_qualified_name="RavenMobile.Platforms.Android.WifiDirect.AndroidWifiDirectService+ActionListener, RavenMobile">
+      <implemented_interfaces>
+        <interface name="android.net.wifi.p2p.WifiP2pManager.ActionListener" />
+      </implemented_interfaces>
+      <constructors>
+        <constructor name="AndroidWifiDirectService_ActionListener" method="n_.ctor:()V:" jni_signature="()V" managed_parameters="" retval="void" is_dynamically_registered="True" />
+      </constructors>
+      <methods>
+        <method name="onFailure" method="n_onFailure:(I)V:GetOnFailure_IHandler:Android.Net.Wifi.P2p.WifiP2pManager+IActionListenerInvoker, Mono.Android, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" jni_signature="(I)V" params="int p0" retval="void" super_call="p0" activate_call="p0" />
+        <method name="onSuccess" method="n_onSuccess:()V:GetOnSuccessHandler:Android.Net.Wifi.P2p.WifiP2pManager+IActionListenerInvoker, Mono.Android, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" jni_signature="()V" retval="void" />
+      </methods>
+    </type>
+    <type name="AndroidBluetoothDiscoveryService" package="crc64438e99c69d36dbd9" application_java_class="android.app.Application" mono_runtime_initialization="mono.MonoPackageManager.LoadApplication (context);" extends_type="android.content.BroadcastReceiver" partial_assembly_qualified_name="RavenMobile.Platforms.Android.Bluetooth.AndroidBluetoothDiscoveryService, RavenMobile">
+      <constructors>
+        <constructor name="AndroidBluetoothDiscoveryService" method="n_.ctor:()V:" jni_signature="()V" managed_parameters="" retval="void" is_dynamically_registered="True" />
+      </constructors>
+      <methods>
+        <method name="onReceive" method="n_onReceive:(Landroid/content/Context;Landroid/content/Intent;)V:GetOnReceive_Landroid_content_Context_Landroid_content_Intent_Handler" jni_signature="(Landroid/content/Context;Landroid/content/Intent;)V" params="android.content.Context p0, android.content.Intent p1" retval="void" super_call="p0, p1" activate_call="p0, p1" />
+      </methods>
+    </type>
+  </jcw-types>
+  <acw-types partial-assembly-name="RavenMobile" module-name="RavenMobile.dll">
+    <type assembly-qualified-name="RavenMobile.MainActivity, RavenMobile, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" compat-jni-name="ravenmobile.MainActivity" java-key="crc64526fb6519b7ee2dd.MainActivity" managed-key="RavenMobile.MainActivity" partial-assembly-qualified-name="RavenMobile.MainActivity, RavenMobile" />
+    <type assembly-qualified-name="RavenMobile.MainApplication, RavenMobile, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" compat-jni-name="ravenmobile.MainApplication" java-key="crc64526fb6519b7ee2dd.MainApplication" managed-key="RavenMobile.MainApplication" partial-assembly-qualified-name="RavenMobile.MainApplication, RavenMobile" />
+    <type assembly-qualified-name="RavenMobile.Platforms.Android.WifiQr.AndroidHotspotService+LocalHotspotCallback, RavenMobile, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" compat-jni-name="ravenmobile.platforms.android.wifiqr.AndroidHotspotService_LocalHotspotCallback" java-key="crc6421e67ae3323efb58.AndroidHotspotService_LocalHotspotCallback" managed-key="RavenMobile.Platforms.Android.WifiQr.AndroidHotspotService.LocalHotspotCallback" partial-assembly-qualified-name="RavenMobile.Platforms.Android.WifiQr.AndroidHotspotService+LocalHotspotCallback, RavenMobile" />
+    <type assembly-qualified-name="RavenMobile.Platforms.Android.WifiQr.AndroidWifiJoinService+WifiNetworkCallback, RavenMobile, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" compat-jni-name="ravenmobile.platforms.android.wifiqr.AndroidWifiJoinService_WifiNetworkCallback" java-key="crc6421e67ae3323efb58.AndroidWifiJoinService_WifiNetworkCallback" managed-key="RavenMobile.Platforms.Android.WifiQr.AndroidWifiJoinService.WifiNetworkCallback" partial-assembly-qualified-name="RavenMobile.Platforms.Android.WifiQr.AndroidWifiJoinService+WifiNetworkCallback, RavenMobile" />
+    <type assembly-qualified-name="RavenMobile.Platforms.Android.WifiDirect.AndroidWifiDirectService, RavenMobile, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" compat-jni-name="ravenmobile.platforms.android.wifidirect.AndroidWifiDirectService" java-key="crc6436e92e4501d1b601.AndroidWifiDirectService" managed-key="RavenMobile.Platforms.Android.WifiDirect.AndroidWifiDirectService" partial-assembly-qualified-name="RavenMobile.Platforms.Android.WifiDirect.AndroidWifiDirectService, RavenMobile" />
+    <type assembly-qualified-name="RavenMobile.Platforms.Android.WifiDirect.AndroidWifiDirectService+ActionListener, RavenMobile, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" compat-jni-name="ravenmobile.platforms.android.wifidirect.AndroidWifiDirectService_ActionListener" java-key="crc6436e92e4501d1b601.AndroidWifiDirectService_ActionListener" managed-key="RavenMobile.Platforms.Android.WifiDirect.AndroidWifiDirectService.ActionListener" partial-assembly-qualified-name="RavenMobile.Platforms.Android.WifiDirect.AndroidWifiDirectService+ActionListener, RavenMobile" />
+    <type assembly-qualified-name="RavenMobile.Platforms.Android.Bluetooth.AndroidBluetoothDiscoveryService, RavenMobile, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" compat-jni-name="ravenmobile.platforms.android.bluetooth.AndroidBluetoothDiscoveryService" java-key="crc64438e99c69d36dbd9.AndroidBluetoothDiscoveryService" managed-key="RavenMobile.Platforms.Android.Bluetooth.AndroidBluetoothDiscoveryService" partial-assembly-qualified-name="RavenMobile.Platforms.Android.Bluetooth.AndroidBluetoothDiscoveryService, RavenMobile" />
+  </acw-types>
+</api>

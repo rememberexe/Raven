@@ -1,0 +1,5 @@
+<api>
+  <acw-types partial-assembly-name="Xamarin.AndroidX.Camera.Video" module-name="Xamarin.AndroidX.Camera.Video.dll">
+    <type assembly-qualified-name="AndroidX.Camera.Video.IVideoCapabilities, Xamarin.AndroidX.Camera.Video, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" compat-jni-name="androidx.camera.video.VideoCapabilities" java-key="androidx.camera.video.VideoCapabilities" managed-key="AndroidX.Camera.Video.IVideoCapabilities" partial-assembly-qualified-name="AndroidX.Camera.Video.IVideoCapabilities, Xamarin.AndroidX.Camera.Video" />
+  </acw-types>
+</api>

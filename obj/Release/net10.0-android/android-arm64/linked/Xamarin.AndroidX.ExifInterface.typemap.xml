@@ -1,0 +1,7 @@
+<api type="release" assembly-name="Xamarin.AndroidX.ExifInterface" mvid="a58a929dfe5d49248982f3ca71718813">
+  <module assembly-name="Xamarin.AndroidX.ExifInterface" mvid="a58a929dfe5d49248982f3ca71718813" mvid-bytes="nZKKpV3+JEmJgvPKcXGIEw==">
+    <types-scratch>
+      <entry key="androidx/exifinterface/media/ExifInterface" java-name="androidx/exifinterface/media/ExifInterface" managed-type-name="AndroidX.ExifInterface.Media.ExifInterface" token="33554448" />
+    </types-scratch>
+  </module>
+</api>

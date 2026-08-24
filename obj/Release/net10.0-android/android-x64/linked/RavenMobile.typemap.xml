@@ -1,0 +1,13 @@
+<api type="release" assembly-name="RavenMobile" mvid="74b4af4485b54a95888312a18865429e">
+  <module assembly-name="RavenMobile" mvid="74b4af4485b54a95888312a18865429e" mvid-bytes="RK+0dLWFlUqIgxKhiGVCng==">
+    <types-scratch>
+      <entry key="crc64526fb6519b7ee2dd/MainActivity" java-name="crc64526fb6519b7ee2dd/MainActivity" managed-type-name="RavenMobile.MainActivity" token="33554439" />
+      <entry key="crc64526fb6519b7ee2dd/MainApplication" java-name="crc64526fb6519b7ee2dd/MainApplication" managed-type-name="RavenMobile.MainApplication" token="33554440" />
+      <entry key="crc6421e67ae3323efb58/AndroidHotspotService_LocalHotspotCallback" java-name="crc6421e67ae3323efb58/AndroidHotspotService_LocalHotspotCallback" managed-type-name="RavenMobile.Platforms.Android.WifiQr.AndroidHotspotService/LocalHotspotCallback" token="33554551" />
+      <entry key="crc6421e67ae3323efb58/AndroidWifiJoinService_WifiNetworkCallback" java-name="crc6421e67ae3323efb58/AndroidWifiJoinService_WifiNetworkCallback" managed-type-name="RavenMobile.Platforms.Android.WifiQr.AndroidWifiJoinService/WifiNetworkCallback" token="33554553" />
+      <entry key="crc6436e92e4501d1b601/AndroidWifiDirectService" java-name="crc6436e92e4501d1b601/AndroidWifiDirectService" managed-type-name="RavenMobile.Platforms.Android.WifiDirect.AndroidWifiDirectService" token="33554464" />
+      <entry key="crc6436e92e4501d1b601/AndroidWifiDirectService_ActionListener" java-name="crc6436e92e4501d1b601/AndroidWifiDirectService_ActionListener" managed-type-name="RavenMobile.Platforms.Android.WifiDirect.AndroidWifiDirectService/ActionListener" token="33554555" />
+      <entry key="crc64438e99c69d36dbd9/AndroidBluetoothDiscoveryService" java-name="crc64438e99c69d36dbd9/AndroidBluetoothDiscoveryService" managed-type-name="RavenMobile.Platforms.Android.Bluetooth.AndroidBluetoothDiscoveryService" token="33554465" />
+    </types-scratch>
+  </module>
+</api>

@@ -1,0 +1,20 @@
+<api type="release" assembly-name="Xamarin.AndroidX.Camera.View" mvid="55c082bf11fd4a5a8f95fed7bc7ae54d">
+  <module assembly-name="Xamarin.AndroidX.Camera.View" mvid="55c082bf11fd4a5a8f95fed7bc7ae54d" mvid-bytes="v4LAVf0RWkqPlf7XvHrlTQ==">
+    <duplicates>
+      <entry java-name="androidx/camera/view/CameraController" managed-type-name="AndroidX.Camera.View.CameraControllerInvoker" token="33554450" />
+      <entry java-name="androidx/camera/view/PreviewView$OnFrameUpdateListener" managed-type-name="AndroidX.Camera.View.PreviewView/IOnFrameUpdateListenerInvoker" token="33554454" />
+    </duplicates>
+    <types-scratch>
+      <entry key="androidx/camera/view/CameraController" java-name="androidx/camera/view/CameraController" managed-type-name="AndroidX.Camera.View.CameraController" token="33554448" />
+      <entry key="androidx/camera/view/CameraController$OutputSize" java-name="androidx/camera/view/CameraController$OutputSize" managed-type-name="AndroidX.Camera.View.CameraController/OutputSize" token="33554449" />
+      <entry key="androidx/camera/view/PreviewView" java-name="androidx/camera/view/PreviewView" managed-type-name="AndroidX.Camera.View.PreviewView" token="33554451" />
+      <entry key="androidx/camera/view/PreviewView$ImplementationMode" java-name="androidx/camera/view/PreviewView$ImplementationMode" managed-type-name="AndroidX.Camera.View.PreviewView/ImplementationMode" token="33554452" />
+      <entry key="androidx/camera/view/PreviewView$OnFrameUpdateListener" java-name="androidx/camera/view/PreviewView$OnFrameUpdateListener" managed-type-name="AndroidX.Camera.View.PreviewView/IOnFrameUpdateListener" token="33554453" skip-in-java-to-managed="True" />
+      <entry key="androidx/camera/view/PreviewView$ScaleType" java-name="androidx/camera/view/PreviewView$ScaleType" managed-type-name="AndroidX.Camera.View.PreviewView/ScaleType" token="33554455" />
+      <entry key="androidx/camera/view/video/AudioConfig" java-name="androidx/camera/view/video/AudioConfig" managed-type-name="AndroidX.Camera.View.Video.AudioConfig" token="33554456" />
+      <entry key="androidx/camera/view/transform/OutputTransform" java-name="androidx/camera/view/transform/OutputTransform" managed-type-name="AndroidX.Camera.View.Transform.OutputTransform" token="33554457" />
+      <entry key="androidx/camera/view/internal/ScreenFlashUiInfo" java-name="androidx/camera/view/internal/ScreenFlashUiInfo" managed-type-name="AndroidX.Camera.View.Internal.ScreenFlashUiInfo" token="33554458" />
+      <entry key="androidx/camera/view/internal/ScreenFlashUiInfo$ProviderType" java-name="androidx/camera/view/internal/ScreenFlashUiInfo$ProviderType" managed-type-name="AndroidX.Camera.View.Internal.ScreenFlashUiInfo/ProviderType" token="33554459" />
+    </types-scratch>
+  </module>
+</api>

@@ -1,0 +1,19 @@
+<api type="release" assembly-name="Xamarin.AndroidX.Camera.Video" mvid="732356e8ecc4422993dcaaa4d6f6041e">
+  <module assembly-name="Xamarin.AndroidX.Camera.Video" mvid="732356e8ecc4422993dcaaa4d6f6041e" mvid-bytes="6FYjc8TsKUKT3Kqk1vYEHg==">
+    <duplicates>
+      <entry java-name="androidx/camera/video/VideoCapabilities" managed-type-name="AndroidX.Camera.Video.IVideoCapabilitiesInvoker" token="33554444" />
+      <entry java-name="androidx/camera/video/OutputOptions" managed-type-name="AndroidX.Camera.Video.OutputOptionsInvoker" token="33554447" />
+    </duplicates>
+    <types-scratch>
+      <entry key="androidx/camera/video/FallbackStrategy" java-name="androidx/camera/video/FallbackStrategy" managed-type-name="AndroidX.Camera.Video.FallbackStrategy" token="33554440" />
+      <entry key="androidx/camera/video/FileDescriptorOutputOptions" java-name="androidx/camera/video/FileDescriptorOutputOptions" managed-type-name="AndroidX.Camera.Video.FileDescriptorOutputOptions" token="33554441" />
+      <entry key="androidx/camera/video/FileOutputOptions" java-name="androidx/camera/video/FileOutputOptions" managed-type-name="AndroidX.Camera.Video.FileOutputOptions" token="33554442" />
+      <entry key="androidx/camera/video/VideoCapabilities" java-name="androidx/camera/video/VideoCapabilities" managed-type-name="AndroidX.Camera.Video.IVideoCapabilities" token="33554443" skip-in-java-to-managed="True" />
+      <entry key="androidx/camera/video/MediaStoreOutputOptions" java-name="androidx/camera/video/MediaStoreOutputOptions" managed-type-name="AndroidX.Camera.Video.MediaStoreOutputOptions" token="33554445" />
+      <entry key="androidx/camera/video/OutputOptions" java-name="androidx/camera/video/OutputOptions" managed-type-name="AndroidX.Camera.Video.OutputOptions" token="33554446" />
+      <entry key="androidx/camera/video/Quality" java-name="androidx/camera/video/Quality" managed-type-name="AndroidX.Camera.Video.Quality" token="33554448" />
+      <entry key="androidx/camera/video/QualitySelector" java-name="androidx/camera/video/QualitySelector" managed-type-name="AndroidX.Camera.Video.QualitySelector" token="33554449" />
+      <entry key="androidx/camera/video/Recording" java-name="androidx/camera/video/Recording" managed-type-name="AndroidX.Camera.Video.Recording" token="33554450" />
+    </types-scratch>
+  </module>
+</api>

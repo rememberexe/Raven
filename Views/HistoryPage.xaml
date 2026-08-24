@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:RavenMobile.Controls"
+    x:Class="RavenMobile.Views.HistoryPage"
+    Shell.NavBarIsVisible="False"
+    NavigationPage.HasNavigationBar="False">
+
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0"
+                             EndPoint="1,1">
+            <GradientStop Color="#05060A" Offset="0"/>
+            <GradientStop Color="#071025" Offset="0.45"/>
+            <GradientStop Color="#05060A" Offset="1"/>
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
+    <Grid RowDefinitions="Auto,*">
+
+        <!-- HEADER -->
+        <VerticalStackLayout Grid.Row="0"
+                             Padding="20,28,20,12"
+                             Spacing="16">
+
+            <Grid ColumnDefinitions="Auto,*,Auto"
+                  ColumnSpacing="14">
+
+                <controls:AnimatedButton Text="☰"
+                        Clicked="MenuButton_Clicked"
+                        WidthRequest="48"
+                        HeightRequest="48"
+                        CornerRadius="18"
+                        BackgroundColor="#111827"
+                        BorderColor="#25304A"
+                        BorderWidth="1"
+                        TextColor="White"
+                        FontSize="22"
+                        Padding="0"/>
+
+                <VerticalStackLayout Grid.Column="1"
+                                     Spacing="2"
+                                     VerticalOptions="Center">
+
+                    <Label Text="Transfer Geçmişi"
+                           TextColor="White"
+                           FontSize="30"
+                           FontAttributes="Bold"/>
+
+                    <Label Text="{Binding HistorySummary}"
+                           TextColor="#8790A3"
+                           FontSize="13"/>
+                </VerticalStackLayout>
+
+                <controls:AnimatedButton Grid.Column="2"
+                        Text="Temizle"
+                        Command="{Binding ClearCommand}"
+                        IsVisible="{Binding HasHistory}"
+                        WidthRequest="88"
+                        HeightRequest="44"
+                        CornerRadius="17"
+                        BackgroundColor="#241B22"
+                        BorderColor="#55303A"
+                        BorderWidth="1"
+                        TextColor="#FFB4C0"
+                        FontSize="12"
+                        FontAttributes="Bold"/>
+            </Grid>
+
+            <Border Padding="14"
+                    BackgroundColor="#0F121B"
+                    Stroke="#222A3C"
+                    StrokeThickness="1">
+
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="24"/>
+                </Border.StrokeShape>
+
+                <Grid ColumnDefinitions="Auto,*"
+                      ColumnSpacing="12">
+
+                    <Border WidthRequest="38"
+                            HeightRequest="38"
+                            BackgroundColor="#172642"
+                            Stroke="#2D6BFF"
+                            StrokeThickness="1">
+
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="15"/>
+                        </Border.StrokeShape>
+
+                        <Label Text="🕘"
+                               FontSize="18"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+                    </Border>
+
+                    <VerticalStackLayout Grid.Column="1"
+                                         Spacing="2"
+                                         VerticalOptions="Center">
+
+                        <Label Text="Son aktarım kayıtları"
+                               TextColor="White"
+                               FontSize="15"
+                               FontAttributes="Bold"/>
+
+                        <Label Text="Gönderilen ve alınan dosyalar otomatik olarak burada tutulur."
+                               TextColor="#7F8AA3"
+                               FontSize="12"/>
+                    </VerticalStackLayout>
+                </Grid>
+            </Border>
+        </VerticalStackLayout>
+
+        <!-- LIST -->
+        <RefreshView Grid.Row="1"
+                     Command="{Binding LoadCommand}">
+
+            <CollectionView x:Name="HistoryCollection"
+                ItemsSource="{Binding Items}"
+                SelectionMode="Single"
+                SelectionChanged="HistoryCollection_SelectionChanged"
+                Margin="20,0,20,20">
+
+                <CollectionView.EmptyView>
+                    <Border Padding="24"
+                            BackgroundColor="#0F121B"
+                            Stroke="#222A3C"
+                            StrokeThickness="1"
+                            VerticalOptions="Center"
+                            HorizontalOptions="Fill">
+
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="30"/>
+                        </Border.StrokeShape>
+
+                        <VerticalStackLayout Spacing="10"
+                                             HorizontalOptions="Center"
+                                             VerticalOptions="Center">
+
+                            <Label Text="🕘"
+                                   FontSize="52"
+                                   HorizontalOptions="Center"/>
+
+                            <Label Text="Henüz geçmiş yok"
+                                   TextColor="White"
+                                   FontSize="22"
+                                   FontAttributes="Bold"
+                                   HorizontalOptions="Center"/>
+
+                            <Label Text="İlk transfer tamamlandığında kayıt burada görünecek."
+                                   TextColor="#8C95AA"
+                                   FontSize="14"
+                                   HorizontalTextAlignment="Center"/>
+                        </VerticalStackLayout>
+                    </Border>
+                </CollectionView.EmptyView>
+
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Border Padding="15"
+                                Margin="0,6"
+                                BackgroundColor="#0F121B"
+                                Stroke="#222A3C"
+                                StrokeThickness="1">
+
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="26"/>
+                            </Border.StrokeShape>
+
+                            <Grid ColumnDefinitions="Auto,*,Auto"
+                                  ColumnSpacing="13">
+
+                                <Border WidthRequest="50"
+                                        HeightRequest="50"
+                                        BackgroundColor="{Binding AccentBackgroundColor}"
+                                        Stroke="{Binding AccentColor}"
+                                        StrokeThickness="1">
+
+                                    <Border.StrokeShape>
+                                        <RoundRectangle CornerRadius="19"/>
+                                    </Border.StrokeShape>
+
+                                    <Label Text="{Binding Icon}"
+                                           FontSize="23"
+                                           HorizontalOptions="Center"
+                                           VerticalOptions="Center"/>
+                                </Border>
+
+                                <VerticalStackLayout Grid.Column="1"
+                                                     Spacing="4"
+                                                     VerticalOptions="Center">
+
+                                    <Label Text="{Binding FileName}"
+                                           TextColor="White"
+                                           FontSize="15"
+                                           FontAttributes="Bold"
+                                           LineBreakMode="TailTruncation"/>
+
+                                    <Label Text="{Binding SummaryText}"
+                                           TextColor="#8C95AA"
+                                           FontSize="12"/>
+
+                                    <Label Text="{Binding Message}"
+                                           TextColor="#5F6A80"
+                                           FontSize="11"
+                                           LineBreakMode="TailTruncation"/>
+                                </VerticalStackLayout>
+
+                                <VerticalStackLayout Grid.Column="2"
+                                                     Spacing="3"
+                                                     VerticalOptions="Center"
+                                                     HorizontalOptions="End">
+
+                                    <Label Text="{Binding DateText}"
+                                           TextColor="#7F8AA3"
+                                           FontSize="11"
+                                           HorizontalOptions="End"/>
+
+                                    <Label Text="{Binding StatusText}"
+                                           TextColor="{Binding AccentColor}"
+                                           FontSize="12"
+                                           FontAttributes="Bold"
+                                           HorizontalOptions="End"/>
+                                </VerticalStackLayout>
+                            </Grid>
+                        </Border>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </RefreshView>
+    </Grid>
+</ContentPage>

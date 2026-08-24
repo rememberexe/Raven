@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:RavenMobile.Controls"
+    x:Class="RavenMobile.Views.HistoryDetailPage"
+    Shell.NavBarIsVisible="False"
+    NavigationPage.HasNavigationBar="False">
+
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0"
+                             EndPoint="1,1">
+            <GradientStop Color="#05060A" Offset="0"/>
+            <GradientStop Color="#071025" Offset="0.45"/>
+            <GradientStop Color="#05060A" Offset="1"/>
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
+    <Grid>
+
+        <!-- BACKGROUND GLOW -->
+        <Grid InputTransparent="True">
+            <Border WidthRequest="260"
+                    HeightRequest="260"
+                    HorizontalOptions="End"
+                    VerticalOptions="Start"
+                    Margin="0,-100,-110,0"
+                    Opacity="0.32"
+                    StrokeThickness="0">
+
+                <Border.Background>
+                    <RadialGradientBrush Center="0.5,0.5"
+                                         Radius="0.75">
+                        <GradientStop Color="#2D6BFF" Offset="0"/>
+                        <GradientStop Color="#002D6BFF" Offset="1"/>
+                    </RadialGradientBrush>
+                </Border.Background>
+
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="180"/>
+                </Border.StrokeShape>
+            </Border>
+        </Grid>
+
+        <ScrollView>
+            <VerticalStackLayout Padding="20,28,20,30"
+                                 Spacing="18">
+
+                <!-- HEADER -->
+                <Grid ColumnDefinitions="Auto,*"
+                      ColumnSpacing="14">
+
+                    <controls:AnimatedButton Text="‹"
+                            Clicked="BackButton_Clicked"
+                            WidthRequest="48"
+                            HeightRequest="48"
+                            CornerRadius="18"
+                            BackgroundColor="#111827"
+                            BorderColor="#25304A"
+                            BorderWidth="1"
+                            TextColor="White"
+                            FontSize="30"
+                            Padding="0"/>
+
+                    <VerticalStackLayout Grid.Column="1"
+                                         Spacing="2"
+                                         VerticalOptions="Center">
+
+                        <Label Text="Transfer Detayı"
+                               TextColor="White"
+                               FontSize="30"
+                               FontAttributes="Bold"/>
+
+                        <Label Text="Seçilen transfer kaydının bilgileri"
+                               TextColor="#8790A3"
+                               FontSize="13"/>
+                    </VerticalStackLayout>
+                </Grid>
+
+                <!-- HERO DETAIL CARD -->
+                <Border Padding="22"
+                        Stroke="#2D6BFF"
+                        StrokeThickness="1.2">
+
+                    <Border.Background>
+                        <LinearGradientBrush StartPoint="0,0"
+                                             EndPoint="1,1">
+                            <GradientStop Color="#121E38" Offset="0"/>
+                            <GradientStop Color="#070A11" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Border.Background>
+
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="36"/>
+                    </Border.StrokeShape>
+
+                    <Border.Shadow>
+                        <Shadow Brush="#2D6BFF"
+                                Radius="26"
+                                Offset="0,0"
+                                Opacity="0.22"/>
+                    </Border.Shadow>
+
+                    <VerticalStackLayout Spacing="16">
+
+                        <Border WidthRequest="82"
+                                HeightRequest="82"
+                                HorizontalOptions="Center"
+                                BackgroundColor="{Binding AccentBackgroundColor}"
+                                Stroke="{Binding AccentColor}"
+                                StrokeThickness="1.2">
+
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="31"/>
+                            </Border.StrokeShape>
+
+                            <Label Text="{Binding Icon}"
+                                   FontSize="40"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"/>
+                        </Border>
+
+                        <VerticalStackLayout Spacing="5">
+                            <Label Text="{Binding FileName}"
+                                   TextColor="White"
+                                   FontSize="25"
+                                   FontAttributes="Bold"
+                                   HorizontalTextAlignment="Center"
+                                   LineBreakMode="WordWrap"/>
+
+                            <Label Text="{Binding SummaryText}"
+                                   TextColor="#8EA3D9"
+                                   FontSize="14"
+                                   FontAttributes="Bold"
+                                   HorizontalTextAlignment="Center"/>
+                        </VerticalStackLayout>
+
+                    </VerticalStackLayout>
+                </Border>
+
+                <!-- INFORMATION -->
+                <Border Padding="18"
+                        BackgroundColor="#0F121B"
+                        Stroke="#222A3C"
+                        StrokeThickness="1">
+
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="32"/>
+                    </Border.StrokeShape>
+
+                    <VerticalStackLayout Spacing="16">
+
+                        <Label Text="Bilgiler"
+                               TextColor="White"
+                               FontSize="22"
+                               FontAttributes="Bold"/>
+
+                        <Grid ColumnDefinitions="*,Auto"
+                              RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto"
+                              RowSpacing="13">
+
+                            <Label Text="Yön"
+                                   TextColor="#7F8AA3"
+                                   FontSize="13"/>
+
+                            <Label Grid.Column="1"
+                                   Text="{Binding DirectionText}"
+                                   TextColor="White"
+                                   FontSize="13"
+                                   FontAttributes="Bold"/>
+
+                            <Label Grid.Row="1"
+                                   Text="Durum"
+                                   TextColor="#7F8AA3"
+                                   FontSize="13"/>
+
+                            <Label Grid.Row="1"
+                                   Grid.Column="1"
+                                   Text="{Binding StatusText}"
+                                   TextColor="{Binding AccentColor}"
+                                   FontSize="13"
+                                   FontAttributes="Bold"/>
+
+                            <Label Grid.Row="2"
+                                   Text="Dosya sayısı"
+                                   TextColor="#7F8AA3"
+                                   FontSize="13"/>
+
+                            <Label Grid.Row="2"
+                                   Grid.Column="1"
+                                   Text="{Binding FileCountText}"
+                                   TextColor="White"
+                                   FontSize="13"
+                                   FontAttributes="Bold"/>
+
+                            <Label Grid.Row="3"
+                                   Text="Toplam boyut"
+                                   TextColor="#7F8AA3"
+                                   FontSize="13"/>
+
+                            <Label Grid.Row="3"
+                                   Grid.Column="1"
+                                   Text="{Binding SizeText}"
+                                   TextColor="White"
+                                   FontSize="13"
+                                   FontAttributes="Bold"/>
+
+                            <Label Grid.Row="4"
+                                   Text="Tarih"
+                                   TextColor="#7F8AA3"
+                                   FontSize="13"/>
+
+                            <Label Grid.Row="4"
+                                   Grid.Column="1"
+                                   Text="{Binding FullDateText}"
+                                   TextColor="White"
+                                   FontSize="13"
+                                   FontAttributes="Bold"/>
+
+                            <Label Grid.Row="5"
+                                   Text="Cihaz"
+                                   TextColor="#7F8AA3"
+                                   FontSize="13"/>
+
+                            <Label Grid.Row="5"
+                                   Grid.Column="1"
+                                   Text="{Binding DeviceName}"
+                                   TextColor="White"
+                                   FontSize="13"
+                                   FontAttributes="Bold"/>
+                        </Grid>
+                    </VerticalStackLayout>
+                </Border>
+
+                <!-- MESSAGE -->
+                <Border Padding="18"
+                        BackgroundColor="#0F121B"
+                        Stroke="#222A3C"
+                        StrokeThickness="1">
+
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="32"/>
+                    </Border.StrokeShape>
+
+                    <Grid ColumnDefinitions="Auto,*"
+                          ColumnSpacing="14">
+
+                        <Border WidthRequest="50"
+                                HeightRequest="50"
+                                BackgroundColor="#172642"
+                                Stroke="#2D6BFF"
+                                StrokeThickness="1">
+
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="19"/>
+                            </Border.StrokeShape>
+
+                            <Label Text="ℹ️"
+                                   FontSize="22"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"/>
+                        </Border>
+
+                        <VerticalStackLayout Grid.Column="1"
+                                             Spacing="5"
+                                             VerticalOptions="Center">
+
+                            <Label Text="Mesaj"
+                                   TextColor="White"
+                                   FontSize="19"
+                                   FontAttributes="Bold"/>
+
+                            <Label Text="{Binding Message}"
+                                   TextColor="#9AA4B8"
+                                   FontSize="13"
+                                   LineBreakMode="WordWrap"/>
+                        </VerticalStackLayout>
+                    </Grid>
+                </Border>
+
+                <Label Text="Raven • Transfer Detail"
+                       TextColor="#3F485D"
+                       FontSize="11"
+                       HorizontalOptions="Center"
+                       Margin="0,4,0,0"/>
+
+            </VerticalStackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>

@@ -1,0 +1,1000 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:RavenMobile.Controls"
+    x:Class="RavenMobile.Views.HomePage"
+    Shell.NavBarIsVisible="False"
+    NavigationPage.HasNavigationBar="False">
+
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0"
+                             EndPoint="1,1">
+            <GradientStop Color="#05060A" Offset="0"/>
+            <GradientStop Color="#071025" Offset="0.45"/>
+            <GradientStop Color="#05060A" Offset="1"/>
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
+    <Grid>
+        
+        <!-- SOFT GLOW BACKGROUND -->
+        <Grid InputTransparent="True">
+
+            <Border WidthRequest="260"
+                    HeightRequest="260"
+                    HorizontalOptions="End"
+                    VerticalOptions="Start"
+                    Margin="0,-90,-110,0"
+                    Opacity="0.35"
+                    StrokeThickness="0">
+
+                <Border.Background>
+                    <RadialGradientBrush Center="0.5,0.5"
+                                         Radius="0.7">
+                        <GradientStop Color="#2D6BFF" Offset="0"/>
+                        <GradientStop Color="#002D6BFF" Offset="1"/>
+                    </RadialGradientBrush>
+                </Border.Background>
+
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="180"/>
+                </Border.StrokeShape>
+            </Border>
+
+            <Border WidthRequest="230"
+                    HeightRequest="230"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Center"
+                    Margin="-120,0,0,0"
+                    Opacity="0.22"
+                    StrokeThickness="0">
+
+                <Border.Background>
+                    <RadialGradientBrush Center="0.5,0.5"
+                                         Radius="0.75">
+                        <GradientStop Color="#8A4DFF" Offset="0"/>
+                        <GradientStop Color="#008A4DFF" Offset="1"/>
+                    </RadialGradientBrush>
+                </Border.Background>
+
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="180"/>
+                </Border.StrokeShape>
+            </Border>
+
+            <Border WidthRequest="190"
+                    HeightRequest="190"
+                    HorizontalOptions="End"
+                    VerticalOptions="End"
+                    Margin="0,0,-90,-40"
+                    Opacity="0.20"
+                    StrokeThickness="0">
+
+                <Border.Background>
+                    <RadialGradientBrush Center="0.5,0.5"
+                                         Radius="0.75">
+                        <GradientStop Color="#00E0FF" Offset="0"/>
+                        <GradientStop Color="#0000E0FF" Offset="1"/>
+                    </RadialGradientBrush>
+                </Border.Background>
+
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="160"/>
+                </Border.StrokeShape>
+            </Border>
+
+        </Grid>
+
+        <Grid RowDefinitions="*,Auto">
+
+            <ScrollView Grid.Row="0">
+                <VerticalStackLayout Padding="20,24,20,28"
+                                     Spacing="18">
+
+                    <!-- HEADER -->
+                    <Grid ColumnDefinitions="Auto,*,Auto"
+      ColumnSpacing="14"
+      Margin="0,2,0,4">
+                        <controls:AnimatedButton Text="☰"
+Clicked="MenuButton_Clicked"
+WidthRequest="48"
+HeightRequest="48"
+CornerRadius="18"
+BackgroundColor="#111827"
+BorderColor="#25304A"
+BorderWidth="1"
+TextColor="White"
+FontSize="22"
+Padding="0"
+VerticalOptions="Center"/>
+                        
+
+                        <Border Grid.Column="2"
+                                WidthRequest="52"
+                                HeightRequest="52"
+                                BackgroundColor="#121827"
+                                Stroke="#293B66"
+                                StrokeThickness="1"
+                                VerticalOptions="Center">
+
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="20"/>
+                            </Border.StrokeShape>
+
+                            <Border.Shadow>
+                                <Shadow Brush="#2D6BFF"
+                                        Radius="18"
+                                        Offset="0,0"
+                                        Opacity="0.32"/>
+                            </Border.Shadow>
+
+                            <Label Text="ᚱ"
+                                   TextColor="#7FA7FF"
+                                   FontSize="27"
+                                   FontAttributes="Bold"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"/>
+                        </Border>
+                    </Grid>
+
+                    <!-- HERO CARD -->
+                    <Border Padding="18"
+                            Stroke="#24304C"
+                            StrokeThickness="1">
+
+                        <Border.Background>
+                            <LinearGradientBrush StartPoint="0,0"
+                                                 EndPoint="1,1">
+                                <GradientStop Color="#151B2B" Offset="0"/>
+                                <GradientStop Color="#0B0E16" Offset="1"/>
+                            </LinearGradientBrush>
+                        </Border.Background>
+
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="34"/>
+                        </Border.StrokeShape>
+
+                        <Border.Shadow>
+                            <Shadow Brush="#000000"
+                                    Offset="0,12"
+                                    Radius="28"
+                                    Opacity="0.45"/>
+                        </Border.Shadow>
+
+                        <VerticalStackLayout Spacing="16">
+
+                            <Grid ColumnDefinitions="*,Auto">
+                                <VerticalStackLayout Spacing="5">
+                                    <Label Text="Dosya aktarımı hazır"
+                                           TextColor="White"
+                                           FontSize="23"
+                                           FontAttributes="Bold"/>
+
+                                    <Label Text="Alıcı QR üretir, gönderici okutur. Liste yok, karmaşa yok."
+                                           TextColor="#8C95AA"
+                                           FontSize="13"
+                                           LineBreakMode="WordWrap"/>
+                                </VerticalStackLayout>
+
+                                <Border Grid.Column="1"
+                                        Padding="10,7"
+                                        BackgroundColor="#142A1C"
+                                        Stroke="#1D7C3A"
+                                        StrokeThickness="1"
+                                        VerticalOptions="Start">
+
+                                    <Border.StrokeShape>
+                                        <RoundRectangle CornerRadius="15"/>
+                                    </Border.StrokeShape>
+
+                                    <Label Text="ONLINE"
+                                           TextColor="#58D68D"
+                                           FontSize="11"
+                                           FontAttributes="Bold"/>
+                                </Border>
+                            </Grid>
+
+                            <Grid ColumnDefinitions="*,*"
+                                  ColumnSpacing="12">
+
+                                <Border Padding="14"
+                                        BackgroundColor="#101521"
+                                        Stroke="#202B44"
+                                        StrokeThickness="1">
+
+                                    <Border.StrokeShape>
+                                        <RoundRectangle CornerRadius="24"/>
+                                    </Border.StrokeShape>
+
+                                    <VerticalStackLayout Spacing="7">
+                                        <Label Text="Alıcı"
+                                               TextColor="#818CA3"
+                                               FontSize="12"/>
+
+                                        <Label Text="QR oluşturur"
+                                               TextColor="White"
+                                               FontSize="16"
+                                               FontAttributes="Bold"/>
+
+                                        <Label Text="Hotspot + server"
+                                               TextColor="#68738A"
+                                               FontSize="12"/>
+                                    </VerticalStackLayout>
+                                </Border>
+
+                                <Border Grid.Column="1"
+                                        Padding="14"
+                                        BackgroundColor="#101521"
+                                        Stroke="#202B44"
+                                        StrokeThickness="1">
+
+                                    <Border.StrokeShape>
+                                        <RoundRectangle CornerRadius="24"/>
+                                    </Border.StrokeShape>
+
+                                    <VerticalStackLayout Spacing="7">
+                                        <Label Text="Gönderici"
+                                               TextColor="#818CA3"
+                                               FontSize="12"/>
+
+                                        <Label Text="QR okutur"
+                                               TextColor="White"
+                                               FontSize="16"
+                                               FontAttributes="Bold"/>
+
+                                        <Label Text="Wi-Fi + TCP"
+                                               TextColor="#68738A"
+                                               FontSize="12"/>
+                                    </VerticalStackLayout>
+                                </Border>
+
+                            </Grid>
+                        </VerticalStackLayout>
+                    </Border>
+
+                    <!-- ACTION BUTTONS -->
+                    <Grid ColumnDefinitions="*,*"
+                          ColumnSpacing="12">
+
+                        <controls:AnimatedButton Text="AL"
+                                Command="{Binding StartReceiveCommand}"
+                                HeightRequest="66"
+                                CornerRadius="26"
+                                BackgroundColor="#2D6BFF"
+                                TextColor="White"
+                                FontSize="19"
+                                FontAttributes="Bold"/>
+
+                        <controls:AnimatedButton Grid.Column="1"
+                                Text="GÖNDER"
+                                Command="{Binding StartSendCommand}"
+                                HeightRequest="66"
+                                CornerRadius="26"
+                                BackgroundColor="#121722"
+                                BorderColor="#3B73FF"
+                                BorderWidth="1.5"
+                                TextColor="White"
+                                FontSize="19"
+                                FontAttributes="Bold"/>
+                    </Grid>
+                    <!-- ADVANCED TRANSFER PANEL -->
+                    <Grid IsVisible="{Binding IsTransferPanelVisible}">
+
+                        <Border x:Name="TransferPulseGlow"
+            HeightRequest="210"
+            Opacity="0.22"
+            StrokeThickness="0"
+            InputTransparent="True"
+            HorizontalOptions="Fill"
+            VerticalOptions="Center">
+
+                            <Border.Background>
+                                <RadialGradientBrush Center="0.5,0.5"
+                                 Radius="0.78">
+                                    <GradientStop Color="#2D6BFF" Offset="0"/>
+                                    <GradientStop Color="#002D6BFF" Offset="1"/>
+                                </RadialGradientBrush>
+                            </Border.Background>
+
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="40"/>
+                            </Border.StrokeShape>
+                        </Border>
+
+                        <Border Padding="18"
+            Stroke="#2D6BFF"
+            StrokeThickness="1.2">
+
+                            <Border.Background>
+                                <LinearGradientBrush StartPoint="0,0"
+                                 EndPoint="1,1">
+                                    <GradientStop Color="#121E38" Offset="0"/>
+                                    <GradientStop Color="#080A10" Offset="1"/>
+                                </LinearGradientBrush>
+                            </Border.Background>
+
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="32"/>
+                            </Border.StrokeShape>
+
+                            <Border.Shadow>
+                                <Shadow Brush="#2D6BFF"
+                    Radius="22"
+                    Offset="0,0"
+                    Opacity="0.20"/>
+                            </Border.Shadow>
+
+                            <VerticalStackLayout Spacing="15">
+
+                                <Grid ColumnDefinitions="*,Auto">
+                                    <VerticalStackLayout Spacing="3">
+                                        <Label Text="{Binding TransferSubtitle}"
+                           TextColor="#8EA3D9"
+                           FontSize="12"
+                           FontAttributes="Bold"/>
+
+                                        <Label Text="{Binding TransferCurrentFileName}"
+                           TextColor="White"
+                           FontSize="17"
+                           FontAttributes="Bold"
+                           LineBreakMode="TailTruncation"/>
+                                    </VerticalStackLayout>
+
+                                    <Border Grid.Column="1"
+                        Padding="12,7"
+                        BackgroundColor="#132E22"
+                        Stroke="#1E7E42"
+                        StrokeThickness="1"
+                        VerticalOptions="Center">
+
+                                        <Border.StrokeShape>
+                                            <RoundRectangle CornerRadius="16"/>
+                                        </Border.StrokeShape>
+
+                                        <Label Text="{Binding TransferProgressText}"
+                           TextColor="#58D68D"
+                           FontSize="15"
+                           FontAttributes="Bold"/>
+                                    </Border>
+                                </Grid>
+
+                                <Grid HeightRequest="20">
+                                    <Border BackgroundColor="#222A3A"
+                        StrokeThickness="0"
+                        HeightRequest="9"
+                        VerticalOptions="Center">
+
+                                        <Border.StrokeShape>
+                                            <RoundRectangle CornerRadius="8"/>
+                                        </Border.StrokeShape>
+                                    </Border>
+
+                                    <ProgressBar Progress="{Binding TransferProgress}"
+                             ProgressColor="#2D6BFF"
+                             BackgroundColor="Transparent"
+                             HeightRequest="9"
+                             ScaleY="2.1"
+                             VerticalOptions="Center"/>
+                                </Grid>
+
+                                <Label Text="{Binding TransferBytesText}"
+                   TextColor="#B8C2D9"
+                   FontSize="13"
+                   HorizontalOptions="Center"/>
+
+                                <Grid ColumnDefinitions="*,*"
+                  ColumnSpacing="12">
+
+                                    <Border Padding="13"
+                        BackgroundColor="#101722"
+                        Stroke="#24304A"
+                        StrokeThickness="1">
+
+                                        <Border.StrokeShape>
+                                            <RoundRectangle CornerRadius="20"/>
+                                        </Border.StrokeShape>
+
+                                        <VerticalStackLayout Spacing="3">
+                                            <Label Text="Hız"
+                               TextColor="#657089"
+                               FontSize="11"/>
+
+                                            <Label Text="{Binding TransferSpeedText}"
+                               TextColor="White"
+                               FontSize="16"
+                               FontAttributes="Bold"/>
+                                        </VerticalStackLayout>
+                                    </Border>
+
+                                    <Border Grid.Column="1"
+                        Padding="13"
+                        BackgroundColor="#101722"
+                        Stroke="#24304A"
+                        StrokeThickness="1">
+
+                                        <Border.StrokeShape>
+                                            <RoundRectangle CornerRadius="20"/>
+                                        </Border.StrokeShape>
+
+                                        <VerticalStackLayout Spacing="3">
+                                            <Label Text="Kalan süre"
+                               TextColor="#657089"
+                               FontSize="11"/>
+
+                                            <Label Text="{Binding TransferRemainingText}"
+                               TextColor="White"
+                               FontSize="16"
+                               FontAttributes="Bold"/>
+                                        </VerticalStackLayout>
+                                    </Border>
+                                </Grid>
+                            </VerticalStackLayout>
+                        </Border>
+                    </Grid>
+
+                    <!-- COMPLETION / ERROR PANEL -->
+                    <Border IsVisible="{Binding IsCompletionPanelVisible}"
+        Padding="18"
+        BackgroundColor="#0F121B"
+        Stroke="#26314A"
+        StrokeThickness="1.2">
+
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="32"/>
+                        </Border.StrokeShape>
+
+                        <Border.Shadow>
+                            <Shadow Brush="#2D6BFF"
+                Radius="24"
+                Offset="0,0"
+                Opacity="0.14"/>
+                        </Border.Shadow>
+
+                        <VerticalStackLayout Spacing="14">
+
+                            <Grid ColumnDefinitions="Auto,*"
+              ColumnSpacing="14">
+
+                                <Border WidthRequest="58"
+                    HeightRequest="58"
+                    BackgroundColor="#121722"
+                    Stroke="#2D6BFF"
+                    StrokeThickness="1.2"
+                    VerticalOptions="Center">
+
+                                    <Border.StrokeShape>
+                                        <RoundRectangle CornerRadius="22"/>
+                                    </Border.StrokeShape>
+
+                                    <Label Text="{Binding CompletionIcon}"
+                       FontSize="27"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"/>
+                                </Border>
+
+                                <VerticalStackLayout Grid.Column="1"
+                                 Spacing="4"
+                                 VerticalOptions="Center">
+
+                                    <Label Text="{Binding CompletionTitle}"
+                       TextColor="White"
+                       FontSize="21"
+                       FontAttributes="Bold"/>
+
+                                    <Label Text="{Binding CompletionMessage}"
+                       TextColor="#AEB8CD"
+                       FontSize="13"
+                       LineBreakMode="WordWrap"/>
+
+                                    <Label Text="{Binding CompletionDetails}"
+                       TextColor="#6E7890"
+                       FontSize="12"/>
+                                </VerticalStackLayout>
+                            </Grid>
+
+                            <Button Text="Tamam"
+                Command="{Binding DismissCompletionCommand}"
+                HeightRequest="48"
+                CornerRadius="18"
+                BackgroundColor="#20283A"
+                TextColor="White"
+                FontSize="14"
+                FontAttributes="Bold"/>
+                        </VerticalStackLayout>
+                    </Border>
+                    <!-- STATUS -->
+                    <Border Padding="17"
+        BackgroundColor="{Binding StatusCardBackgroundColor}"
+        Stroke="{Binding StatusAccentColor}"
+        StrokeThickness="1.1">
+
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="28"/>
+                        </Border.StrokeShape>
+
+                        <Border.Shadow>
+                            <Shadow Brush="#2D6BFF"
+                Radius="16"
+                Offset="0,0"
+                Opacity="0.12"/>
+                        </Border.Shadow>
+
+                        <Grid ColumnDefinitions="Auto,*"
+          ColumnSpacing="13">
+
+                            <Border WidthRequest="40"
+                HeightRequest="40"
+                BackgroundColor="{Binding StatusIconBackgroundColor}"
+                Stroke="{Binding StatusAccentColor}"
+                StrokeThickness="1">
+
+                                <Border.StrokeShape>
+                                    <RoundRectangle CornerRadius="16"/>
+                                </Border.StrokeShape>
+
+                                <Label Text="{Binding StatusIcon}"
+                   TextColor="{Binding StatusAccentColor}"
+                   FontSize="18"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"/>
+                            </Border>
+
+                            <VerticalStackLayout Grid.Column="1"
+                             Spacing="3">
+                                <Label Text="Durum"
+                   TextColor="#70798E"
+                   FontSize="12"/>
+
+                                <Label Text="{Binding StatusText}"
+                   TextColor="#F2F5FF"
+                   FontSize="15"
+                   FontAttributes="Bold"
+                   LineBreakMode="WordWrap"/>
+                            </VerticalStackLayout>
+                        </Grid>
+                    </Border>
+
+                    <!-- RECEIVE PANEL -->
+                    <Border IsVisible="{Binding IsReceivePanelVisible}"
+                            Padding="20"
+                            Stroke="#2D6BFF"
+                            StrokeThickness="1.3">
+
+                        <Border.Background>
+                            <LinearGradientBrush StartPoint="0,0"
+                                                 EndPoint="1,1">
+                                <GradientStop Color="#111A31" Offset="0"/>
+                                <GradientStop Color="#070A11" Offset="1"/>
+                            </LinearGradientBrush>
+                        </Border.Background>
+
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="36"/>
+                        </Border.StrokeShape>
+
+                        <Border.Shadow>
+                            <Shadow Brush="#2D6BFF"
+                                    Offset="0,0"
+                                    Radius="26"
+                                    Opacity="0.24"/>
+                        </Border.Shadow>
+
+                        <VerticalStackLayout Spacing="17">
+
+                            <Grid ColumnDefinitions="*,Auto">
+                                <VerticalStackLayout Spacing="4">
+                                    <Label Text="Alıcı modu"
+                                           TextColor="White"
+                                           FontSize="24"
+                                           FontAttributes="Bold"/>
+
+                                    <Label Text="Gönderici cihaz bu kodu okutacak."
+                                           TextColor="#8E98AD"
+                                           FontSize="13"/>
+                                </VerticalStackLayout>
+
+                                <Border Grid.Column="1"
+                                        Padding="10,7"
+                                        BackgroundColor="#12351F"
+                                        Stroke="#1C8740"
+                                        StrokeThickness="1"
+                                        VerticalOptions="Start">
+
+                                    <Border.StrokeShape>
+                                        <RoundRectangle CornerRadius="16"/>
+                                    </Border.StrokeShape>
+
+                                    <Label Text="HAZIR"
+                                           TextColor="#58D68D"
+                                           FontSize="11"
+                                           FontAttributes="Bold"/>
+                                </Border>
+                            </Grid>
+
+                            <!-- RECEIVE WAITING ANIMATION -->
+                            <Border Padding="14"
+                                    BackgroundColor="#101722"
+                                    Stroke="#23314B"
+                                    StrokeThickness="1">
+
+                                <Border.StrokeShape>
+                                    <RoundRectangle CornerRadius="22"/>
+                                </Border.StrokeShape>
+
+                                <Grid ColumnDefinitions="Auto,*,Auto"
+                                      ColumnSpacing="12">
+
+                                    <Border WidthRequest="38"
+                                            HeightRequest="38"
+                                            BackgroundColor="#162645"
+                                            Stroke="#2D6BFF"
+                                            StrokeThickness="1">
+
+                                        <Border.StrokeShape>
+                                            <RoundRectangle CornerRadius="16"/>
+                                        </Border.StrokeShape>
+
+                                        <Label Text="📡"
+                                               FontSize="17"
+                                               HorizontalOptions="Center"
+                                               VerticalOptions="Center"/>
+                                    </Border>
+
+                                    <VerticalStackLayout Grid.Column="1"
+                                                         Spacing="2"
+                                                         VerticalOptions="Center">
+
+                                        <Label Text="Dosya bekleniyor"
+                                               TextColor="White"
+                                               FontSize="15"
+                                               FontAttributes="Bold"/>
+
+                                        <Label Text="Gönderici QR kodu okuttuğunda aktarım başlayacak."
+                                               TextColor="#7F8AA3"
+                                               FontSize="12"/>
+                                    </VerticalStackLayout>
+
+                                    <HorizontalStackLayout Grid.Column="2"
+                                                           Spacing="5"
+                                                           VerticalOptions="Center">
+
+                                        <Border x:Name="ReceiveDot1"
+                                                WidthRequest="7"
+                                                HeightRequest="7"
+                                                BackgroundColor="#2D6BFF"
+                                                StrokeThickness="0">
+                                            <Border.StrokeShape>
+                                                <RoundRectangle CornerRadius="4"/>
+                                            </Border.StrokeShape>
+                                        </Border>
+
+                                        <Border x:Name="ReceiveDot2"
+                                                WidthRequest="7"
+                                                HeightRequest="7"
+                                                BackgroundColor="#2D6BFF"
+                                                StrokeThickness="0">
+                                            <Border.StrokeShape>
+                                                <RoundRectangle CornerRadius="4"/>
+                                            </Border.StrokeShape>
+                                        </Border>
+
+                                        <Border x:Name="ReceiveDot3"
+                                                WidthRequest="7"
+                                                HeightRequest="7"
+                                                BackgroundColor="#2D6BFF"
+                                                StrokeThickness="0">
+                                            <Border.StrokeShape>
+                                                <RoundRectangle CornerRadius="4"/>
+                                            </Border.StrokeShape>
+                                        </Border>
+
+                                    </HorizontalStackLayout>
+                                </Grid>
+                            </Border>
+
+                            <!-- QR PREMIUM AREA -->
+                            <Grid HorizontalOptions="Center">
+
+                                <Border WidthRequest="292"
+                                        HeightRequest="292"
+                                        Opacity="0.28"
+                                        StrokeThickness="0">
+
+                                    <Border.Background>
+                                        <RadialGradientBrush Center="0.5,0.5"
+                                                             Radius="0.7">
+                                            <GradientStop Color="#2D6BFF" Offset="0"/>
+                                            <GradientStop Color="#002D6BFF" Offset="1"/>
+                                        </RadialGradientBrush>
+                                    </Border.Background>
+
+                                    <Border.StrokeShape>
+                                        <RoundRectangle CornerRadius="44"/>
+                                    </Border.StrokeShape>
+                                </Border>
+
+                                <Border Padding="15"
+                                        BackgroundColor="White"
+                                        Stroke="#DDE6FF"
+                                        StrokeThickness="1"
+                                        HorizontalOptions="Center"
+                                        VerticalOptions="Center">
+
+                                    <Border.StrokeShape>
+                                        <RoundRectangle CornerRadius="30"/>
+                                    </Border.StrokeShape>
+
+                                    <Image Source="{Binding QrImageSource}"
+                                           WidthRequest="245"
+                                           HeightRequest="245"
+                                           Aspect="AspectFit"/>
+                                </Border>
+                            </Grid>
+
+                            <!-- NETWORK INFO -->
+                            <Border Padding="16"
+                                    BackgroundColor="#101521"
+                                    Stroke="#27314A"
+                                    StrokeThickness="1">
+
+                                <Border.StrokeShape>
+                                    <RoundRectangle CornerRadius="26"/>
+                                </Border.StrokeShape>
+
+                                <VerticalStackLayout Spacing="12">
+                                    <Grid ColumnDefinitions="*,Auto">
+                                        <Label Text="Bağlantı bilgileri"
+                                               TextColor="#737F96"
+                                               FontSize="12"/>
+
+                                        <Label Grid.Column="1"
+                                               Text="QR içine gömülü"
+                                               TextColor="#52607A"
+                                               FontSize="11"/>
+                                    </Grid>
+
+                                    <Grid ColumnDefinitions="Auto,*"
+                                          RowDefinitions="Auto,Auto,Auto"
+                                          ColumnSpacing="12"
+                                          RowSpacing="9">
+
+                                        <Label Text="Wi-Fi"
+                                               TextColor="#6F7890"
+                                               FontSize="13"/>
+
+                                        <Label Grid.Column="1"
+                                               Text="{Binding HotspotSsid}"
+                                               TextColor="White"
+                                               FontSize="15"
+                                               FontAttributes="Bold"
+                                               LineBreakMode="TailTruncation"/>
+
+                                        <Label Grid.Row="1"
+                                               Text="Şifre"
+                                               TextColor="#6F7890"
+                                               FontSize="13"/>
+
+                                        <Label Grid.Row="1"
+                                               Grid.Column="1"
+                                               Text="{Binding HotspotPassword}"
+                                               TextColor="#DDE5F5"
+                                               FontSize="14"
+                                               LineBreakMode="TailTruncation"/>
+
+                                        <Label Grid.Row="2"
+                                               Text="Adres"
+                                               TextColor="#6F7890"
+                                               FontSize="13"/>
+
+                                        <Label Grid.Row="2"
+                                               Grid.Column="1"
+                                               Text="{Binding HotspotAddress}"
+                                               TextColor="#9EA8BC"
+                                               FontSize="13"/>
+                                    </Grid>
+                                </VerticalStackLayout>
+                            </Border>
+
+                            <controls:AnimatedButton Text="Alıcı Modunu Kapat"
+                                    Command="{Binding StopReceiveCommand}"
+                                    HeightRequest="52"
+                                    CornerRadius="21"
+                                    BackgroundColor="#202634"
+                                    TextColor="White"
+                                    FontSize="14"
+                                    FontAttributes="Bold"/>
+                        </VerticalStackLayout>
+                    </Border>
+
+                    <!-- FILES CARD -->
+                    <Border Padding="18"
+                            BackgroundColor="#0F121B"
+                            Stroke="#222A3C"
+                            StrokeThickness="1"
+                            MinimumHeightRequest="540">
+
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="32"/>
+                        </Border.StrokeShape>
+
+                        <VerticalStackLayout Spacing="15">
+
+                            <Grid ColumnDefinitions="*,Auto,Auto"
+                                  ColumnSpacing="10">
+
+                                <VerticalStackLayout Spacing="3">
+                                    <Label Text="Gönderilecek dosyalar"
+                                           TextColor="White"
+                                           FontSize="22"
+                                           FontAttributes="Bold"/>
+
+                                    <Label Text="{Binding SelectedFilesSummary}"
+                                           TextColor="#8892A6"
+                                           FontSize="13"/>
+
+                                    <Label Text="{Binding SelectedFilesTotalSize}"
+                                           TextColor="#5F6A80"
+                                           FontSize="12"/>
+                                </VerticalStackLayout>
+
+                                <controls:AnimatedButton Grid.Column="1"
+                                        Text="Seç"
+                                        Command="{Binding PickFileCommand}"
+                                        WidthRequest="86"
+                                        HeightRequest="48"
+                                        CornerRadius="19"
+                                        BackgroundColor="#20283A"
+                                        TextColor="White"
+                                        FontSize="14"
+                                        FontAttributes="Bold"/>
+
+                                <controls:AnimatedButton Grid.Column="2"
+                                        Text="Temizle"
+                                        Command="{Binding ClearFilesCommand}"
+                                        WidthRequest="96"
+                                        HeightRequest="48"
+                                        CornerRadius="19"
+                                        BackgroundColor="#241B22"
+                                        BorderColor="#55303A"
+                                        BorderWidth="1"
+                                        TextColor="#FFB4C0"
+                                        FontSize="13"
+                                        FontAttributes="Bold"/>
+                            </Grid>
+
+                            <CollectionView ItemsSource="{Binding SelectedFiles}"
+                                            HeightRequest="390">
+
+                                <CollectionView.EmptyView>
+                                    <Border Padding="18"
+                                            BackgroundColor="#111722"
+                                            Stroke="#1E2636"
+                                            StrokeThickness="1"
+                                            HeightRequest="160">
+
+                                        <Border.StrokeShape>
+                                            <RoundRectangle CornerRadius="24"/>
+                                        </Border.StrokeShape>
+
+                                        <VerticalStackLayout HorizontalOptions="Center"
+                                                             VerticalOptions="Center"
+                                                             Spacing="8">
+
+                                            <Label Text="📁"
+                                                   FontSize="34"
+                                                   HorizontalOptions="Center"/>
+
+                                            <Label Text="Henüz dosya seçilmedi"
+                                                   TextColor="#A0A8B8"
+                                                   FontSize="14"
+                                                   FontAttributes="Bold"
+                                                   HorizontalOptions="Center"/>
+
+                                            <Label Text="Göndermek için Seç butonuna bas."
+                                                   TextColor="#697386"
+                                                   FontSize="12"
+                                                   HorizontalOptions="Center"/>
+                                        </VerticalStackLayout>
+                                    </Border>
+                                </CollectionView.EmptyView>
+
+                                <CollectionView.ItemTemplate>
+                                    <DataTemplate>
+                                        <Border Padding="12"
+                                                Margin="0,5"
+                                                BackgroundColor="#121722"
+                                                Stroke="#222B3E"
+                                                StrokeThickness="1">
+
+                                            <Border.StrokeShape>
+                                                <RoundRectangle CornerRadius="22"/>
+                                            </Border.StrokeShape>
+
+                                            <Grid ColumnDefinitions="Auto,*,Auto"
+                                                  ColumnSpacing="12">
+
+                                                <Border WidthRequest="54"
+                                                        HeightRequest="54"
+                                                        BackgroundColor="{Binding FileAccentBackgroundColor}"
+                                                        Stroke="#29344A"
+                                                        StrokeThickness="0.8">
+
+                                                    <Border.StrokeShape>
+                                                        <RoundRectangle CornerRadius="18"/>
+                                                    </Border.StrokeShape>
+
+                                                    <Grid>
+
+                                                        <Image Source="{Binding PreviewSource}"
+                                                               IsVisible="{Binding HasImagePreview}"
+                                                               Aspect="AspectFill"
+                                                               WidthRequest="54"
+                                                               HeightRequest="54"/>
+
+                                                        <Label Text="{Binding FileIcon}"
+                                                               IsVisible="{Binding ShowFileIcon}"
+                                                               FontSize="22"
+                                                               HorizontalOptions="Center"
+                                                               VerticalOptions="Center"/>
+                                                    </Grid>
+                                                </Border>
+
+                                                <VerticalStackLayout Grid.Column="1"
+                                                                     VerticalOptions="Center"
+                                                                     Spacing="3">
+
+                                                    <Label Text="{Binding FileName}"
+                                                           TextColor="#EEF2FF"
+                                                           FontSize="14"
+                                                           FontAttributes="Bold"
+                                                           LineBreakMode="TailTruncation"/>
+
+                                                    <Label Text="{Binding FileTypeText}"
+                                                           TextColor="#7F8AA3"
+                                                           FontSize="12"/>
+                                                </VerticalStackLayout>
+
+                                                <VerticalStackLayout Grid.Column="2"
+                                                                     VerticalOptions="Center"
+                                                                     HorizontalOptions="End"
+                                                                     Spacing="3">
+
+                                                    <Label Text="{Binding SizeText}"
+                                                           TextColor="#D5DCEF"
+                                                           FontSize="12"
+                                                           FontAttributes="Bold"
+                                                           HorizontalOptions="End"/>
+
+                                                    <Label Text="Hazır"
+                                                           TextColor="#657089"
+                                                           FontSize="11"
+                                                           HorizontalOptions="End"/>
+                                                </VerticalStackLayout>
+                                            </Grid>
+                                        </Border>
+                                    </DataTemplate>
+                                </CollectionView.ItemTemplate>
+                            </CollectionView>
+                        </VerticalStackLayout>
+                    </Border>
+
+                    
+
+                </VerticalStackLayout>
+            </ScrollView>
+
+            <!-- FOOTER -->
+            <Border Grid.Row="1"
+                    Padding="0,8,0,12"
+                    BackgroundColor="#05060A"
+                    StrokeThickness="0">
+
+                <Label Text="Raven • Local Wi-Fi Transfer"
+                       TextColor="#3F485D"
+                       FontSize="11"
+                       HorizontalOptions="Center"/>
+            </Border>
+        </Grid>
+    </Grid>
+</ContentPage>

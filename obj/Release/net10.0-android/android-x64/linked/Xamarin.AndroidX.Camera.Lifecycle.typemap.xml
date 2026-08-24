@@ -1,0 +1,7 @@
+<api type="release" assembly-name="Xamarin.AndroidX.Camera.Lifecycle" mvid="4da0046acbb04c03af43f04d0ac8afcd">
+  <module assembly-name="Xamarin.AndroidX.Camera.Lifecycle" mvid="4da0046acbb04c03af43f04d0ac8afcd" mvid-bytes="agSgTbDLA0yvQ/BNCsivzQ==">
+    <types-scratch>
+      <entry key="androidx/camera/lifecycle/ProcessCameraProvider" java-name="androidx/camera/lifecycle/ProcessCameraProvider" managed-type-name="AndroidX.Camera.Lifecycle.ProcessCameraProvider" token="33554434" />
+    </types-scratch>
+  </module>
+</api>
